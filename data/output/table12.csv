@@ -1,4 +1,3 @@
-Assets,Article(s)
-Weekly maturing assets,24(1) 25(1)
-Reverse repurchase agreements which are able to be terminated by giving prior notice of five working days,24(1) 25(1)
-x85% = Weekly liquid assets (bucket 2),
+BucketInfo
+x100% = Weekly liquid assets (bucket 1)
+x85% = Weekly liquid assets (bucket 2)

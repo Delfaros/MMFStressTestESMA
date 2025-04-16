@@ -321,64 +321,37 @@ def parse_table_11(raw_text):
 # Parseur Tableaux 12 & 13
 # ---------------------------------------------------------------------
 def parse_table_12_and_13(raw_text):
-    import re
     import pandas as pd
-
-    # Nettoyage initial
-    text = clean_pdf_text(raw_text)
+    import re
+    
+    # Nettoyage initial si nécessaire
+    text = raw_text.strip() if hasattr(raw_text, 'strip') else clean_pdf_text(raw_text)
     lines = [l.strip() for l in text.splitlines() if l.strip()]
-
-    # Fusion totale des lignes coupées dans les cellules (ne pas fusionner lignes en 'x')
-    fused_lines = []
-    for line in lines:
-        if fused_lines and not re.match(r'^(x\d+%|Assets|Cash|Weekly|Reverse|Eligible|Professional|Retail)', line):
-            fused_lines[-1] += ' ' + line
-        else:
-            fused_lines.append(line)
-
-    # Identifier la frontière entre T12 et T13
-    boundary_idx = next((i for i, line in enumerate(fused_lines) if line.startswith("x100%")), None)
-    if boundary_idx is None:
-        print("Frontière 'x100% = Weekly liquid assets (bucket 1)' non trouvée.")
-        return pd.DataFrame(), pd.DataFrame()
-
-    block12 = fused_lines[:boundary_idx]
-    block13 = fused_lines[boundary_idx+1:]
-
-    # ---------- Extraction du Tableau 13 ----------
+    
+    # ----- Extraction du tableau 13 (comme dans le code original) -----
     investor_pattern = re.compile(r'(Professional investor|Retail investor)\s+(\d+)')
-    df13_rows = investor_pattern.findall(' '.join(block12))
+    investor_lines = [line for line in lines if "investor" in line.lower()]
+    df13_rows = []
+    
+    for line in investor_lines:
+        match = investor_pattern.search(line)
+        if match:
+            df13_rows.append([match.group(1), match.group(2)])
+    
     df13 = pd.DataFrame(df13_rows, columns=['Investor', 'NetOutflows(%)'])
-
-    # Retirer les lignes investisseurs et l'en-tête de block12
-    block12 = [line for line in block12 if 'investor' not in line.lower() and not line.lower().startswith('assets article')]
-
-    # ---------- Extraction précise du Tableau 12 ----------
-    records = []
-    current_asset = ''
-
-    for line in block12:
-        if line.startswith('x'):
-            continue  # ignorer les lignes en 'x'
-        article_matches = re.findall(r'\d+\(\w+\)\(?\w*\)?', line)
-        if article_matches:
-            asset_part = re.split(r'\d+\(\w+\)\(?\w*\)?', line)[0].strip(' ,')
-            asset_full = (current_asset + ' ' + asset_part).strip()
-            articles = ' '.join(article_matches)
-            records.append([asset_full, articles])
-            current_asset = ''
-        else:
-            current_asset += ' ' + line if current_asset else line
-
-    # Ajouter la dernière ligne x85% si elle existe
-    bucket2_line = next((line for line in block13 if line.startswith('x85%')), None)
-    if bucket2_line:
-        records.append([bucket2_line.strip(), ''])
-
-    df12 = pd.DataFrame(records, columns=['Assets', 'Article(s)'])
-
+    
+    # ----- Extraction des lignes commençant par x et se terminant au premier ) -----
+    # Recombiner toutes les lignes en un seul texte pour la recherche
+    full_text = ' '.join(lines)
+    
+    # Trouver toutes les occurrences commençant par x et se terminant au premier )
+    pattern = re.compile(r'(x\d+%[^)]*\))')
+    matches = pattern.findall(full_text)
+    
+    # Créer le DataFrame pour le tableau 12
+    df12 = pd.DataFrame(matches, columns=['BucketInfo'])
+    
     return df12, df13
-
 
 # ---------------------------------------------------------------------
 # Parseur Tableau 14
