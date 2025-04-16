@@ -1,0 +1,30 @@
+GeoCountryDesc,1M,3M,6M,1Y,2Y
+EU Euro area Interest rate swap on the EUR (euro),90,90,120,130,140
+EU Bulgaria Interest rate swap on the BGN (Bulgarian lev),120,140,160,170,180
+EU Czech Republic Interest rate swap on the CZK (Czech koruna),100,110,120,150,180
+EU Denmark Interest rate swap on the DKK (Danish krone),90,100,120,130,140
+EU Hungary Interest rate swap on the HUF (Hungarian forint),110,120,140,160,180
+EU Poland Interest rate swap on the PLN (Polish zloty),110,110,140,160,180
+EU Romania Interest rate swap on the RON (Romanian leu),120,140,160,170,180
+EU Sweden Interest rate swap on the SEK (Swedish krona),90,90,120,130,140
+Rest of Europe United Kingdom Interest rate swap on the GBP (British pound),100,100,120,130,140
+Rest of Europe Norway Interest rate swap on the NOK (Norwegian krone),100,100,120,130,140
+Rest of Europe Russia Interest rate swap on the RUB (Russian ruble),210,210,220,220,260
+Rest of Europe Switzerland Interest rate swap on the CHF (Swiss franc),80,90,110,130,140
+Rest of Europe Turkey Interest rate swap on the TRY (Turkish lira),230,270,310,340,380
+North America Canada Interest rate swap on the CAD (Canadian dollar),100,110,130,140,150
+North America United States Interest rate swap on the USD (US dollar),100,110,130,140,150
+Australia and Pacific Australia Interest rate swap on the AUD (Australian dollar),100,130,130,150,160
+Australia and Pacific New Zealand Interest rate swap on the NZD (New Zealand dollar),100,130,140,150,160
+South and Central America Chile Interest rate swap on the CLP (Chilean peso),170,190,220,240,280
+South and Central America Colombia Interest rate swap on the COP (Colombian peso),230,250,250,260,270
+South and Central America Mexico Interest rate swap on the MXN (Mexican peso),160,180,200,220,250
+Asia China Interest rate swap on the CNY (Chinese yuan),100,120,140,170,190
+Asia Hong Kong Interest rate swap on the HKD (Hong Kong dollar),110,130,150,170,190
+Asia India Interest rate swap on the INR (Indian rupee),120,140,160,180,200
+Asia Japan Interest rate swap on the JPY (Japanese yen),10,10,10,20,30
+Asia Korea Interest rate swap on the KRW (South Korean won),100,120,130,170,200
+Asia Malaysia Interest rate swap on the MYR (Malaysian ringgit),40,60,80,110,120
+Asia Singapore Interest rate swap on the SGD (Singapore dollar),120,130,140,150,160
+Asia Thailand Interest rate swap on the THB (Thai baht),50,70,90,120,130
+Africa South Africa Interest rate swap on the ZAR (South African rand),150,160,160,190,220
