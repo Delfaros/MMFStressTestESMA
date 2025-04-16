@@ -1,4 +1,4 @@
-Geographic Area,Description,1M,3M,6M,1Y,2Y
-EU,Default value for countries not included in table 8,100,110,140,150,170
-Other,advanced economies Default value for countries not included in table 8,90,100,120,140,150
-Other,emerging markets Default value for countries not included in table 8,150,170,180,200,230
+Geographic Area,1M,3M,6M,1Y,2Y
+EU,109,121,135,144,154
+Other advanced economies,85,99,115,128,141
+Other emerging markets,140,155,174,196,210

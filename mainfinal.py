@@ -237,29 +237,45 @@ def parse_table_8(raw_text):
 # ---------------------------------------------------------------------
 def parse_table_9(raw_text):
     text = clean_pdf_text(raw_text)
-    lines = [l.strip() for l in text.splitlines() if l.strip()]
+    lines = [line.strip() for line in text.splitlines() if line.strip()]
+
     if len(lines) < 4:
         return pd.DataFrame()
-    data_lines = lines[3:]
+
+    data_lines = lines[3:]  # ignorer les titres (3 lignes)
     table_data = []
-    for i in range(0, len(data_lines), 2):
-        if i+1 >= len(data_lines):
-            break
-        text_line = data_lines[i]
-        num_line = data_lines[i+1]
-        tokens = text_line.split()
-        if len(tokens) < 2:
-            continue
-        geo = tokens[0]
-        description = " ".join(tokens[1:])
-        num_values = num_line.split()
-        if len(num_values) != 5:
-            continue
-        row = [geo, description] + num_values
-        table_data.append(row)
-    columns = ["Geographic Area", "Description", "1M", "3M", "6M", "1Y", "2Y"]
+
+    i = 0
+    while i < len(data_lines):
+        line = data_lines[i]
+
+        nums = re.findall(r'\d+', line)
+        if len(nums) >= 5:
+            num_values = nums[-5:]
+            geo_area = re.split(r'\s+Default value', line)[0]
+            table_data.append([geo_area.strip()] + num_values)
+            i += 1
+        else:
+            # cas original, chiffres à la ligne suivante
+            if (i + 1) < len(data_lines):
+                next_line = data_lines[i + 1]
+                num_values = re.findall(r'\d+', next_line)
+                if len(num_values) == 5:
+                    geo_area = re.split(r'\s+Default value', line)[0]
+                    table_data.append([geo_area.strip()] + num_values)
+                    i += 2
+                else:
+                    print(f"Ligne ignorée (format inattendu) : {line}")
+                    i += 1
+            else:
+                print(f"Ligne finale ignorée (pas de données numériques) : {line}")
+                i += 1
+
+    columns = ["Geographic Area", "1M", "3M", "6M", "1Y", "2Y"]
     df = pd.DataFrame(table_data, columns=columns)
     return df
+
+
 
 # ---------------------------------------------------------------------
 # Parseur Tableau 10
@@ -269,6 +285,7 @@ def parse_table_10(raw_text):
     lines = [l.strip() for l in text.splitlines() if l.strip()]
     if len(lines) < 3:
         return pd.DataFrame()
+
     data_lines = lines[3:]
     fixed_lines = []
     for line in data_lines:
@@ -276,18 +293,24 @@ def parse_table_10(raw_text):
             fixed_lines[-1] += " " + line
         else:
             fixed_lines.append(line)
+
     table_data = []
     for line in fixed_lines:
         parts = line.rsplit(maxsplit=2)
-        if len(parts) < 3:
-            continue
-        geo_desc = parts[0]
-        exch_rate = parts[1]
-        shock = parts[2]
-        table_data.append([geo_desc, exch_rate, shock])
-    columns = ["GeoDesc", "ExchangeRateName", "Shock"]
+        if len(parts) == 3:
+            exchange_rate = parts[1]
+            shock = parts[2]
+            if re.match(r'^-?\d+(\.\d+)?$', shock):  # Vérifie que Shock est numérique
+                table_data.append([exchange_rate, shock])
+            else:
+                print(f"Ligne ignorée (Shock non-numérique) : {line}")
+        else:
+            print(f"Ligne ignorée (format inattendu) : {line}")
+
+    columns = ["ExchangeRateName", "Shock"]
     df = pd.DataFrame(table_data, columns=columns)
     return df
+
 
 # ---------------------------------------------------------------------
 # Parseur Tableau 11
@@ -297,6 +320,7 @@ def parse_table_11(raw_text):
     lines = [l.strip() for l in text.splitlines() if l.strip()]
     if len(lines) < 3:
         return pd.DataFrame()
+
     data_lines = lines[3:]
     fixed_lines = []
     for line in data_lines:
@@ -304,18 +328,24 @@ def parse_table_11(raw_text):
             fixed_lines[-1] += " " + line
         else:
             fixed_lines.append(line)
+
     table_data = []
     for line in fixed_lines:
         parts = line.rsplit(maxsplit=2)
-        if len(parts) < 3:
-            continue
-        geo_desc = parts[0]
-        exch_rate = parts[1]
-        shock = parts[2]
-        table_data.append([geo_desc, exch_rate, shock])
-    columns = ["GeoDesc", "ExchangeRateName", "Shock"]
+        if len(parts) == 3:
+            exchange_rate = parts[1]
+            shock = parts[2]
+            if re.match(r'^-?\d+(\.\d+)?$', shock):  # Vérifie que Shock est numérique
+                table_data.append([exchange_rate, shock])
+            else:
+                print(f"Ligne ignorée (Shock non-numérique) : {line}")
+        else:
+            print(f"Ligne ignorée (format inattendu) : {line}")
+
+    columns = ["ExchangeRateName", "Shock"]
     df = pd.DataFrame(table_data, columns=columns)
     return df
+
 
 # ---------------------------------------------------------------------
 # Parseur Tableaux 12 & 13

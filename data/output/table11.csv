@@ -1,29 +1,27 @@
-GeoDesc,ExchangeRateName,Shock
-EU EURCZK represents 1 EUR per x CZK (Czech koruna),EURCZK,-6
-EU EURHUF represents 1 EUR per x HUF (Hungarian forints),EURHUF,-9
-EU EURPLN represents 1 EUR per x PLN (Polish zloty),EURPLN,-5
-EU EURRON represents 1 EUR per x RON (Romanian leu ),EURRON,-2
-EU EURSEK represents 1 EUR per x SEK (Swedish krona),EURSEK,-3
-Rest of Europe EURRSD represents 1 EUR per x RSD (Serbian dinar ),EURRSD,-2
-Rest of Europe EURNOK represents 1 EUR per x NOK (Norwegian krone),EURNOK,-9
-Rest of Europe EURGBP represents 1 EUR per x GBP (British pound),EURGBP,-5
-Rest of Europe EURCHF represents 1 EUR per x CHF (Swiss franc),EURCHF,-10
-Rest of Europe EURRUB represents 1 EUR per x RUB (Russian ruble),EURRUB,-44
-Rest of Europe EURTRY represents 1 EUR per x TRY (Turkish lira),EURTRY,-7
-North America USDCAD represents 1 USD per x CAD (Canadian dollar),USDCAD,10
-North America EURUSD represents 1 EUR per x USD (US dollar),EURUSD,-12
-Australia and Pacific AUDUSD represents 1 AUD per x USD (Australian dollar),AUDUSD,-15
-Australia and Pacific NZDUSD represents 1 NZD per x USD (New Zealand dollar),NZDUSD,-15
-South and Central America USDARS represents 1 USD per x ARS (Argentine peso),USDARS,18
-South and Central America USDBRL represents 1 USD per x BRL (Brazilian real),USDBRL,14
-South and Central America USDMXN represents 1 USD per x MXN (Mexican peso),USDMXN,11
-Asia USDCNY represents 1 USD per x CNY (Chinese yuan renminbi),USDCNY,7
-Asia USDHKD represents 1 USD per x HKD (Hong Kong dollar),USDHKD,1
-Asia USDINR represents 1 USD per x INR (Indian rupee),USDINR,8
-Asia USDJPY represents 1 USD per x JPY (Japanese yen),USDJPY,16
-Asia USDKRW represents 1 USD per x KRW (South korean won),USDKRW,12
-Asia USDMYR represents 1 USD per x MYR (Malaysian ringgit),USDMYR,6
-Asia USDSGD represents 1 USD per x SGD (Singapore dollar),USDSGD,5
-Asia USDTHB represents 1 USD per x THB (Thai baht),USDTHB,10
-Asia USDTWD represents 1 USD per x TWD (New Taiwan dollar),USDTWD,7
-Africa USDZAR represents 1 USD per x ZAR (South African rand),USDZAR,20
+ExchangeRateName,Shock
+EURCZK,-6.44
+EURHUF,-13.46
+EURPLN,-8.38
+EURRON,-2.70
+EURSEK,-5.47
+EURRSD,-1.95
+EURNOK,-6.77
+EURGBP,-5.92
+EURCHF,-8.21
+EURTRY,-7.74
+USDCAD,10.11
+EURUSD,-11.34
+AUDUSD,-15.68
+NZDUSD,-14.33
+USDARS,17.90
+USDBRL,16.00
+USDMXN,9.14
+USDCNY,7.38
+USDHKD,0.80
+USDINR,6.85
+USDJPY,14.25
+USDKRW,12.95
+USDMYR,6.53
+USDSGD,5.55
+USDTHB,8.90
+USDZAR,18.84
