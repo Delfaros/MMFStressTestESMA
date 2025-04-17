@@ -142,32 +142,48 @@ def parse_table_5(raw_text):
     data_lines = lines[2:]
     table_data = []
     num_pattern = re.compile(r'^-?\d+(?:\.\d+)?(?:E-?\d+)?$')
+
+    # Labels multi‑mots reconnus pour la Geographic Area
+    known_geos = [
+        "Advanced economies",
+        "Emerging markets",
+        "EA (weighted averages)",
+        "EU (weighted averages)"
+    ]
+
     for line in data_lines:
+        # On prend les 4 derniers tokens comme valeurs numériques
         parts = line.rsplit(maxsplit=4)
         if len(parts) < 5:
             continue
-        text_part = parts[0]
-        num_values = parts[1:]
-        if not all(num_pattern.match(val) for val in num_values):
+        text_part, *nums = parts
+        if not all(num_pattern.match(x) for x in nums):
             continue
-        tokens = text_part.split()
-        if len(tokens) >= 2 and tokens[0] == "Advanced" and tokens[1] == "economies":
-            geo = "Advanced economies"
-            country = " ".join(tokens[2:])
-        else:
-            n = len(tokens)
-            if n % 2 == 0:
-                half = n // 2
-                geo = " ".join(tokens[:half])
-                country = " ".join(tokens[half:])
-            else:
-                geo = tokens[0]
-                country = " ".join(tokens[1:]) if n > 1 else ""
-        row = [geo, country] + num_values
-        table_data.append(row)
+
+        # On cherche si le début correspond à une geo connue
+        geo = None
+        country = ""
+        for kg in known_geos:
+            if text_part.startswith(kg):
+                geo = kg
+                country = text_part[len(kg):].strip()
+                break
+
+        if geo is None:
+            # Pas de geo connue → on sépare au premier espace
+            toks = text_part.split()
+            geo = toks[0]
+            country = " ".join(toks[1:])
+
+        # Si on n'a pas trouvé de country, on duplique geo
+        if country == "":
+            country = geo
+
+        table_data.append([geo, country] + nums)
+
     columns = ["Geographic Area", "Country", "3M", "6M", "1Y", "2Y"]
-    df = pd.DataFrame(table_data, columns=columns)
-    return df
+    return pd.DataFrame(table_data, columns=columns)
+
 
 # ---------------------------------------------------------------------
 # Parseur Tableau 6

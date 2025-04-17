@@ -1,0 +1,484 @@
+----TABLE 1-------------------------------------------------------------------------------------------------------------------
+
+--UNION SELECT 1,'Liquidity discount factor - Sovereign bonds by residual maturity - Reference countries (in %)','DE','3M',0.18
+--UNION SELECT 1,'Liquidity discount factor - Sovereign bonds by residual maturity - Reference countries (in %)','DE','6M',0.26
+--UNION SELECT 1,'Liquidity discount factor - Sovereign bonds by residual maturity - Reference countries (in %)','DE','1Y',0.65
+--UNION SELECT 1,'Liquidity discount factor - Sovereign bonds by residual maturity - Reference countries (in %)','DE','1.5Y',0.76
+--UNION SELECT 1,'Liquidity discount factor - Sovereign bonds by residual maturity - Reference countries (in %)','DE','2Y',0.87
+--UNION SELECT 1,'Liquidity discount factor - Sovereign bonds by residual maturity - Reference countries (in %)','ES','3M',0.22
+--UNION SELECT 1,'Liquidity discount factor - Sovereign bonds by residual maturity - Reference countries (in %)','ES','6M',0.42
+--UNION SELECT 1,'Liquidity discount factor - Sovereign bonds by residual maturity - Reference countries (in %)','ES','1Y',0.99
+--UNION SELECT 1,'Liquidity discount factor - Sovereign bonds by residual maturity - Reference countries (in %)','ES','1.5Y',1.11
+--UNION SELECT 1,'Liquidity discount factor - Sovereign bonds by residual maturity - Reference countries (in %)','ES','2Y',1.23
+--UNION SELECT 1,'Liquidity discount factor - Sovereign bonds by residual maturity - Reference countries (in %)','FR','3M',0.19
+--UNION SELECT 1,'Liquidity discount factor - Sovereign bonds by residual maturity - Reference countries (in %)','FR','6M',0.39
+--UNION SELECT 1,'Liquidity discount factor - Sovereign bonds by residual maturity - Reference countries (in %)','FR','1Y',0.90
+--UNION SELECT 1,'Liquidity discount factor - Sovereign bonds by residual maturity - Reference countries (in %)','FR','1.5Y',1.01
+--UNION SELECT 1,'Liquidity discount factor - Sovereign bonds by residual maturity - Reference countries (in %)','FR','2Y',1.11
+--UNION SELECT 1,'Liquidity discount factor - Sovereign bonds by residual maturity - Reference countries (in %)','IT','3M',0.19
+--UNION SELECT 1,'Liquidity discount factor - Sovereign bonds by residual maturity - Reference countries (in %)','IT','6M',0.36
+--UNION SELECT 1,'Liquidity discount factor - Sovereign bonds by residual maturity - Reference countries (in %)','IT','1Y',0.80
+--UNION SELECT 1,'Liquidity discount factor - Sovereign bonds by residual maturity - Reference countries (in %)','IT','1.5Y',0.93
+--UNION SELECT 1,'Liquidity discount factor - Sovereign bonds by residual maturity - Reference countries (in %)','IT','2Y',1.07
+--UNION SELECT 1,'Liquidity discount factor - Sovereign bonds by residual maturity - Reference countries (in %)','NL','3M',0.20
+--UNION SELECT 1,'Liquidity discount factor - Sovereign bonds by residual maturity - Reference countries (in %)','NL','6M',0.40
+--UNION SELECT 1,'Liquidity discount factor - Sovereign bonds by residual maturity - Reference countries (in %)','NL','1Y',0.95
+--UNION SELECT 1,'Liquidity discount factor - Sovereign bonds by residual maturity - Reference countries (in %)','NL','1.5Y',1.05
+--UNION SELECT 1,'Liquidity discount factor - Sovereign bonds by residual maturity - Reference countries (in %)','NL','2Y',1.16
+
+----TABLE 2-------------------------------------------------------------------------------------------------------------------
+
+--UNION SELECT 2,'Liquidity discount factor - Sovereign bonds by rating and residual maturity (in %)','AAA','3M',0.19
+--UNION SELECT 2,'Liquidity discount factor - Sovereign bonds by rating and residual maturity (in %)','AAA','6M',0.33
+--UNION SELECT 2,'Liquidity discount factor - Sovereign bonds by rating and residual maturity (in %)','AAA','1Y',0.80
+--UNION SELECT 2,'Liquidity discount factor - Sovereign bonds by rating and residual maturity (in %)','AAA','1.5Y',0.91
+--UNION SELECT 2,'Liquidity discount factor - Sovereign bonds by rating and residual maturity (in %)','AAA','2Y',1.02
+--UNION SELECT 2,'Liquidity discount factor - Sovereign bonds by rating and residual maturity (in %)','AA','3M',0.19
+--UNION SELECT 2,'Liquidity discount factor - Sovereign bonds by rating and residual maturity (in %)','AA','6M',0.39
+--UNION SELECT 2,'Liquidity discount factor - Sovereign bonds by rating and residual maturity (in %)','AA','1Y',0.90
+--UNION SELECT 2,'Liquidity discount factor - Sovereign bonds by rating and residual maturity (in %)','AA','1.5Y',1.01
+--UNION SELECT 2,'Liquidity discount factor - Sovereign bonds by rating and residual maturity (in %)','AA','2Y',1.11
+--UNION SELECT 2,'Liquidity discount factor - Sovereign bonds by rating and residual maturity (in %)','A','3M',0.22
+--UNION SELECT 2,'Liquidity discount factor - Sovereign bonds by rating and residual maturity (in %)','A','6M',0.42
+--UNION SELECT 2,'Liquidity discount factor - Sovereign bonds by rating and residual maturity (in %)','A','1Y',0.99
+--UNION SELECT 2,'Liquidity discount factor - Sovereign bonds by rating and residual maturity (in %)','A','1.5Y',1.11
+--UNION SELECT 2,'Liquidity discount factor - Sovereign bonds by rating and residual maturity (in %)','A','2Y',1.23
+--UNION SELECT 2,'Liquidity discount factor - Sovereign bonds by rating and residual maturity (in %)','BBB','3M',0.22
+--UNION SELECT 2,'Liquidity discount factor - Sovereign bonds by rating and residual maturity (in %)','BBB','6M',0.42
+--UNION SELECT 2,'Liquidity discount factor - Sovereign bonds by rating and residual maturity (in %)','BBB','1Y',0.99
+--UNION SELECT 2,'Liquidity discount factor - Sovereign bonds by rating and residual maturity (in %)','BBB','1.5Y',1.11
+--UNION SELECT 2,'Liquidity discount factor - Sovereign bonds by rating and residual maturity (in %)','BBB','2Y',1.23
+--UNION SELECT 2,'Liquidity discount factor - Sovereign bonds by rating and residual maturity (in %)','Below BBB or unrated','3M',0.28
+--UNION SELECT 2,'Liquidity discount factor - Sovereign bonds by rating and residual maturity (in %)','Below BBB or unrated','6M',0.55
+--UNION SELECT 2,'Liquidity discount factor - Sovereign bonds by rating and residual maturity (in %)','Below BBB or unrated','1Y',1.28
+--UNION SELECT 2,'Liquidity discount factor - Sovereign bonds by rating and residual maturity (in %)','Below BBB or unrated','1.5Y',1.44
+--UNION SELECT 2,'Liquidity discount factor - Sovereign bonds by rating and residual maturity (in %)','Below BBB or unrated','2Y',1.60
+
+----TABLE 3-------------------------------------------------------------------------------------------------------------------
+
+--UNION SELECT 3,'Liquidity discount factor - Corporate bonds by rating and residual maturity (in %)','AAA','3M',0.62
+--UNION SELECT 3,'Liquidity discount factor - Corporate bonds by rating and residual maturity (in %)','AAA','6M',0.92
+--UNION SELECT 3,'Liquidity discount factor - Corporate bonds by rating and residual maturity (in %)','AAA','1Y',1.16
+--UNION SELECT 3,'Liquidity discount factor - Corporate bonds by rating and residual maturity (in %)','AAA','1.5Y',1.25
+--UNION SELECT 3,'Liquidity discount factor - Corporate bonds by rating and residual maturity (in %)','AAA','2Y',1.34
+--UNION SELECT 3,'Liquidity discount factor - Corporate bonds by rating and residual maturity (in %)','AA','3M',0.62
+--UNION SELECT 3,'Liquidity discount factor - Corporate bonds by rating and residual maturity (in %)','AA','6M',0.92
+--UNION SELECT 3,'Liquidity discount factor - Corporate bonds by rating and residual maturity (in %)','AA','1Y',1.16
+--UNION SELECT 3,'Liquidity discount factor - Corporate bonds by rating and residual maturity (in %)','AA','1.5Y',1.26
+--UNION SELECT 3,'Liquidity discount factor - Corporate bonds by rating and residual maturity (in %)','AA','2Y',1.36
+--UNION SELECT 3,'Liquidity discount factor - Corporate bonds by rating and residual maturity (in %)','A','3M',0.63
+--UNION SELECT 3,'Liquidity discount factor - Corporate bonds by rating and residual maturity (in %)','A','6M',0.93
+--UNION SELECT 3,'Liquidity discount factor - Corporate bonds by rating and residual maturity (in %)','A','1Y',1.18
+--UNION SELECT 3,'Liquidity discount factor - Corporate bonds by rating and residual maturity (in %)','A','1.5Y',1.26
+--UNION SELECT 3,'Liquidity discount factor - Corporate bonds by rating and residual maturity (in %)','A','2Y',1.36
+--UNION SELECT 3,'Liquidity discount factor - Corporate bonds by rating and residual maturity (in %)','BBB','3M',0.64
+--UNION SELECT 3,'Liquidity discount factor - Corporate bonds by rating and residual maturity (in %)','BBB','6M',0.94
+--UNION SELECT 3,'Liquidity discount factor - Corporate bonds by rating and residual maturity (in %)','BBB','1Y',1.21
+--UNION SELECT 3,'Liquidity discount factor - Corporate bonds by rating and residual maturity (in %)','BBB','1.5Y',1.28
+--UNION SELECT 3,'Liquidity discount factor - Corporate bonds by rating and residual maturity (in %)','BBB','2Y',1.36
+--UNION SELECT 3,'Liquidity discount factor - Corporate bonds by rating and residual maturity (in %)','Below BBB or unrated','3M',0.83
+--UNION SELECT 3,'Liquidity discount factor - Corporate bonds by rating and residual maturity (in %)','Below BBB or unrated','6M',1.22
+--UNION SELECT 3,'Liquidity discount factor - Corporate bonds by rating and residual maturity (in %)','Below BBB or unrated','1Y',1.58
+--UNION SELECT 3,'Liquidity discount factor - Corporate bonds by rating and residual maturity (in %)','Below BBB or unrated','1.5Y',1.67
+--UNION SELECT 3,'Liquidity discount factor - Corporate bonds by rating and residual maturity (in %)','Below BBB or unrated','2Y',1.76
+
+----TABLE 4-------------------------------------------------------------------------------------------------------------------
+
+--UNION SELECT 4,'Price impact parameter (in %)','Cash and deposits','All',- * POWER(CAST(0.1 AS FLOAT), 13.0)
+--UNION SELECT 4,'Price impact parameter (in %)','Sovereign bonds','All',POWER(CAST(0.1 AS FLOAT), 13.0)
+--UNION SELECT 4,'Price impact parameter (in %)','Corporate bonds (non-financial)','All',POWER(CAST(0.1 AS FLOAT), 13.0)
+--UNION SELECT 4,'Price impact parameter (in %)','Corporate bonds (financial)','All',POWER(CAST(0.1 AS FLOAT), 13.0)
+--UNION SELECT 4,'Price impact parameter (in %)','Securitisation and ABCPs','All',POWER(CAST(0.1 AS FLOAT), 13.0)
+--UNION SELECT 4,'Price impact parameter (in %)','Shares issued by other MMFs','All',POWER(CAST(0.1 AS FLOAT), 13.0)
+--UNION SELECT 4,'Price impact parameter (in %)','Other (incl. repos)','All',POWER(CAST(0.1 AS FLOAT), 13.0)
+
+----TABLE 5-------------------------------------------------------------------------------------------------------------------
+
+--UNION SELECT 5,'Credit Spread by residual maturity - Government bonds (basis points)','Austria','3M',36
+--UNION SELECT 5,'Credit Spread by residual maturity - Government bonds (basis points)','Austria','6M',48
+--UNION SELECT 5,'Credit Spread by residual maturity - Government bonds (basis points)','Austria','1Y',58
+--UNION SELECT 5,'Credit Spread by residual maturity - Government bonds (basis points)','Austria','2Y',61
+--UNION SELECT 5,'Credit Spread by residual maturity - Government bonds (basis points)','Belgium','3M',37
+--UNION SELECT 5,'Credit Spread by residual maturity - Government bonds (basis points)','Belgium','6M',48
+--UNION SELECT 5,'Credit Spread by residual maturity - Government bonds (basis points)','Belgium','1Y',55
+--UNION SELECT 5,'Credit Spread by residual maturity - Government bonds (basis points)','Belgium','2Y',61
+--UNION SELECT 5,'Credit Spread by residual maturity - Government bonds (basis points)','Bulgaria','3M',54
+--UNION SELECT 5,'Credit Spread by residual maturity - Government bonds (basis points)','Bulgaria','6M',56
+--UNION SELECT 5,'Credit Spread by residual maturity - Government bonds (basis points)','Bulgaria','1Y',72
+--UNION SELECT 5,'Credit Spread by residual maturity - Government bonds (basis points)','Bulgaria','2Y',78
+--UNION SELECT 5,'Credit Spread by residual maturity - Government bonds (basis points)','Croatia','3M',46
+--UNION SELECT 5,'Credit Spread by residual maturity - Government bonds (basis points)','Croatia','6M',59
+--UNION SELECT 5,'Credit Spread by residual maturity - Government bonds (basis points)','Croatia','1Y',68
+--UNION SELECT 5,'Credit Spread by residual maturity - Government bonds (basis points)','Croatia','2Y',74
+--UNION SELECT 5,'Credit Spread by residual maturity - Government bonds (basis points)','Cyprus','3M',72
+--UNION SELECT 5,'Credit Spread by residual maturity - Government bonds (basis points)','Cyprus','6M',89
+--UNION SELECT 5,'Credit Spread by residual maturity - Government bonds (basis points)','Cyprus','1Y',104
+--UNION SELECT 5,'Credit Spread by residual maturity - Government bonds (basis points)','Cyprus','2Y',110
+--UNION SELECT 5,'Credit Spread by residual maturity - Government bonds (basis points)','Czech Republic','3M',71
+--UNION SELECT 5,'Credit Spread by residual maturity - Government bonds (basis points)','Czech Republic','6M',87
+--UNION SELECT 5,'Credit Spread by residual maturity - Government bonds (basis points)','Czech Republic','1Y',103
+--UNION SELECT 5,'Credit Spread by residual maturity - Government bonds (basis points)','Czech Republic','2Y',109
+--UNION SELECT 5,'Credit Spread by residual maturity - Government bonds (basis points)','Denmark','3M',22
+--UNION SELECT 5,'Credit Spread by residual maturity - Government bonds (basis points)','Denmark','6M',33
+--UNION SELECT 5,'Credit Spread by residual maturity - Government bonds (basis points)','Denmark','1Y',46
+--UNION SELECT 5,'Credit Spread by residual maturity - Government bonds (basis points)','Denmark','2Y',57
+--UNION SELECT 5,'Credit Spread by residual maturity - Government bonds (basis points)','Finland','3M',38
+--UNION SELECT 5,'Credit Spread by residual maturity - Government bonds (basis points)','Finland','6M',49
+--UNION SELECT 5,'Credit Spread by residual maturity - Government bonds (basis points)','Finland','1Y',56
+--UNION SELECT 5,'Credit Spread by residual maturity - Government bonds (basis points)','Finland','2Y',62
+--UNION SELECT 5,'Credit Spread by residual maturity - Government bonds (basis points)','France','3M',17
+--UNION SELECT 5,'Credit Spread by residual maturity - Government bonds (basis points)','France','6M',26
+--UNION SELECT 5,'Credit Spread by residual maturity - Government bonds (basis points)','France','1Y',39
+--UNION SELECT 5,'Credit Spread by residual maturity - Government bonds (basis points)','France','2Y',40
+--UNION SELECT 5,'Credit Spread by residual maturity - Government bonds (basis points)','Germany','3M',12
+--UNION SELECT 5,'Credit Spread by residual maturity - Government bonds (basis points)','Germany','6M',23
+--UNION SELECT 5,'Credit Spread by residual maturity - Government bonds (basis points)','Germany','1Y',30
+--UNION SELECT 5,'Credit Spread by residual maturity - Government bonds (basis points)','Germany','2Y',32
+--UNION SELECT 5,'Credit Spread by residual maturity - Government bonds (basis points)','Greece','3M',72
+--UNION SELECT 5,'Credit Spread by residual maturity - Government bonds (basis points)','Greece','6M',89
+--UNION SELECT 5,'Credit Spread by residual maturity - Government bonds (basis points)','Greece','1Y',104
+--UNION SELECT 5,'Credit Spread by residual maturity - Government bonds (basis points)','Greece','2Y',110
+--UNION SELECT 5,'Credit Spread by residual maturity - Government bonds (basis points)','Hungary','3M',13
+--UNION SELECT 5,'Credit Spread by residual maturity - Government bonds (basis points)','Hungary','6M',22
+--UNION SELECT 5,'Credit Spread by residual maturity - Government bonds (basis points)','Hungary','1Y',39
+--UNION SELECT 5,'Credit Spread by residual maturity - Government bonds (basis points)','Hungary','2Y',40
+--UNION SELECT 5,'Credit Spread by residual maturity - Government bonds (basis points)','Ireland','3M',23
+--UNION SELECT 5,'Credit Spread by residual maturity - Government bonds (basis points)','Ireland','6M',37
+--UNION SELECT 5,'Credit Spread by residual maturity - Government bonds (basis points)','Ireland','1Y',44
+--UNION SELECT 5,'Credit Spread by residual maturity - Government bonds (basis points)','Ireland','2Y',51
+--UNION SELECT 5,'Credit Spread by residual maturity - Government bonds (basis points)','Italy','3M',55
+--UNION SELECT 5,'Credit Spread by residual maturity - Government bonds (basis points)','Italy','6M',66
+--UNION SELECT 5,'Credit Spread by residual maturity - Government bonds (basis points)','Italy','1Y',78
+--UNION SELECT 5,'Credit Spread by residual maturity - Government bonds (basis points)','Italy','2Y',82
+--UNION SELECT 5,'Credit Spread by residual maturity - Government bonds (basis points)','Latvia','3M',50
+--UNION SELECT 5,'Credit Spread by residual maturity - Government bonds (basis points)','Latvia','6M',64
+--UNION SELECT 5,'Credit Spread by residual maturity - Government bonds (basis points)','Latvia','1Y',73
+--UNION SELECT 5,'Credit Spread by residual maturity - Government bonds (basis points)','Latvia','2Y',80
+--UNION SELECT 5,'Credit Spread by residual maturity - Government bonds (basis points)','Lithuania','3M',47
+--UNION SELECT 5,'Credit Spread by residual maturity - Government bonds (basis points)','Lithuania','6M',60
+--UNION SELECT 5,'Credit Spread by residual maturity - Government bonds (basis points)','Lithuania','1Y',69
+--UNION SELECT 5,'Credit Spread by residual maturity - Government bonds (basis points)','Lithuania','2Y',76
+--UNION SELECT 5,'Credit Spread by residual maturity - Government bonds (basis points)','Luxembourg','3M',17
+--UNION SELECT 5,'Credit Spread by residual maturity - Government bonds (basis points)','Luxembourg','6M',29
+--UNION SELECT 5,'Credit Spread by residual maturity - Government bonds (basis points)','Luxembourg','1Y',35
+--UNION SELECT 5,'Credit Spread by residual maturity - Government bonds (basis points)','Luxembourg','2Y',39
+--UNION SELECT 5,'Credit Spread by residual maturity - Government bonds (basis points)','Malta','3M',38
+--UNION SELECT 5,'Credit Spread by residual maturity - Government bonds (basis points)','Malta','6M',53
+--UNION SELECT 5,'Credit Spread by residual maturity - Government bonds (basis points)','Malta','1Y',57
+--UNION SELECT 5,'Credit Spread by residual maturity - Government bonds (basis points)','Malta','2Y',62
+--UNION SELECT 5,'Credit Spread by residual maturity - Government bonds (basis points)','Netherlands','3M',14
+--UNION SELECT 5,'Credit Spread by residual maturity - Government bonds (basis points)','Netherlands','6M',25
+--UNION SELECT 5,'Credit Spread by residual maturity - Government bonds (basis points)','Netherlands','1Y',31
+--UNION SELECT 5,'Credit Spread by residual maturity - Government bonds (basis points)','Netherlands','2Y',35
+--UNION SELECT 5,'Credit Spread by residual maturity - Government bonds (basis points)','Poland','3M',58
+--UNION SELECT 5,'Credit Spread by residual maturity - Government bonds (basis points)','Poland','6M',68
+--UNION SELECT 5,'Credit Spread by residual maturity - Government bonds (basis points)','Poland','1Y',80
+--UNION SELECT 5,'Credit Spread by residual maturity - Government bonds (basis points)','Poland','2Y',86
+--UNION SELECT 5,'Credit Spread by residual maturity - Government bonds (basis points)','Portugal','3M',62
+--UNION SELECT 5,'Credit Spread by residual maturity - Government bonds (basis points)','Portugal','6M',74
+--UNION SELECT 5,'Credit Spread by residual maturity - Government bonds (basis points)','Portugal','1Y',87
+--UNION SELECT 5,'Credit Spread by residual maturity - Government bonds (basis points)','Portugal','2Y',100
+--UNION SELECT 5,'Credit Spread by residual maturity - Government bonds (basis points)','Romania','3M',35
+--UNION SELECT 5,'Credit Spread by residual maturity - Government bonds (basis points)','Romania','6M',43
+--UNION SELECT 5,'Credit Spread by residual maturity - Government bonds (basis points)','Romania','1Y',58
+--UNION SELECT 5,'Credit Spread by residual maturity - Government bonds (basis points)','Romania','2Y',67
+--UNION SELECT 5,'Credit Spread by residual maturity - Government bonds (basis points)','Slovakia','3M',49
+--UNION SELECT 5,'Credit Spread by residual maturity - Government bonds (basis points)','Slovakia','6M',63
+--UNION SELECT 5,'Credit Spread by residual maturity - Government bonds (basis points)','Slovakia','1Y',72
+--UNION SELECT 5,'Credit Spread by residual maturity - Government bonds (basis points)','Slovakia','2Y',79
+--UNION SELECT 5,'Credit Spread by residual maturity - Government bonds (basis points)','Slovenia','3M',16
+--UNION SELECT 5,'Credit Spread by residual maturity - Government bonds (basis points)','Slovenia','6M',27
+--UNION SELECT 5,'Credit Spread by residual maturity - Government bonds (basis points)','Slovenia','1Y',34
+--UNION SELECT 5,'Credit Spread by residual maturity - Government bonds (basis points)','Slovenia','2Y',37
+--UNION SELECT 5,'Credit Spread by residual maturity - Government bonds (basis points)','Spain','3M',52
+--UNION SELECT 5,'Credit Spread by residual maturity - Government bonds (basis points)','Spain','6M',63
+--UNION SELECT 5,'Credit Spread by residual maturity - Government bonds (basis points)','Spain','1Y',71
+--UNION SELECT 5,'Credit Spread by residual maturity - Government bonds (basis points)','Spain','2Y',78
+--UNION SELECT 5,'Credit Spread by residual maturity - Government bonds (basis points)','Sweden','3M',13
+--UNION SELECT 5,'Credit Spread by residual maturity - Government bonds (basis points)','Sweden','6M',22
+--UNION SELECT 5,'Credit Spread by residual maturity - Government bonds (basis points)','Sweden','1Y',31
+--UNION SELECT 5,'Credit Spread by residual maturity - Government bonds (basis points)','Sweden','2Y',41
+--UNION SELECT 5,'Credit Spread by residual maturity - Government bonds (basis points)','EA (weighted averages)','3M',29
+--UNION SELECT 5,'Credit Spread by residual maturity - Government bonds (basis points)','EA (weighted averages)','6M',39
+--UNION SELECT 5,'Credit Spread by residual maturity - Government bonds (basis points)','EA (weighted averages)','1Y',49
+--UNION SELECT 5,'Credit Spread by residual maturity - Government bonds (basis points)','EA (weighted averages)','2Y',52
+--UNION SELECT 5,'Credit Spread by residual maturity - Government bonds (basis points)','EU (weighted averages)','3M',30
+--UNION SELECT 5,'Credit Spread by residual maturity - Government bonds (basis points)','EU (weighted averages)','6M',41
+--UNION SELECT 5,'Credit Spread by residual maturity - Government bonds (basis points)','EU (weighted averages)','1Y',50
+--UNION SELECT 5,'Credit Spread by residual maturity - Government bonds (basis points)','EU (weighted averages)','2Y',55
+--UNION SELECT 5,'Credit Spread by residual maturity - Government bonds (basis points)','United Kingdom','3M',14
+--UNION SELECT 5,'Credit Spread by residual maturity - Government bonds (basis points)','United Kingdom','6M',25
+--UNION SELECT 5,'Credit Spread by residual maturity - Government bonds (basis points)','United Kingdom','1Y',36
+--UNION SELECT 5,'Credit Spread by residual maturity - Government bonds (basis points)','United Kingdom','2Y',43
+--UNION SELECT 5,'Credit Spread by residual maturity - Government bonds (basis points)','Switzerland','3M',30
+--UNION SELECT 5,'Credit Spread by residual maturity - Government bonds (basis points)','Switzerland','6M',31
+--UNION SELECT 5,'Credit Spread by residual maturity - Government bonds (basis points)','Switzerland','1Y',33
+--UNION SELECT 5,'Credit Spread by residual maturity - Government bonds (basis points)','Switzerland','2Y',35
+--UNION SELECT 5,'Credit Spread by residual maturity - Government bonds (basis points)','Norway','3M',14
+--UNION SELECT 5,'Credit Spread by residual maturity - Government bonds (basis points)','Norway','6M',26
+--UNION SELECT 5,'Credit Spread by residual maturity - Government bonds (basis points)','Norway','1Y',34
+--UNION SELECT 5,'Credit Spread by residual maturity - Government bonds (basis points)','Norway','2Y',45
+--UNION SELECT 5,'Credit Spread by residual maturity - Government bonds (basis points)','United States','3M',16
+--UNION SELECT 5,'Credit Spread by residual maturity - Government bonds (basis points)','United States','6M',23
+--UNION SELECT 5,'Credit Spread by residual maturity - Government bonds (basis points)','United States','1Y',31
+--UNION SELECT 5,'Credit Spread by residual maturity - Government bonds (basis points)','United States','2Y',40
+--UNION SELECT 5,'Credit Spread by residual maturity - Government bonds (basis points)','Japan','3M',35
+--UNION SELECT 5,'Credit Spread by residual maturity - Government bonds (basis points)','Japan','6M',35
+--UNION SELECT 5,'Credit Spread by residual maturity - Government bonds (basis points)','Japan','1Y',45
+--UNION SELECT 5,'Credit Spread by residual maturity - Government bonds (basis points)','Japan','2Y',45
+--UNION SELECT 5,'Credit Spread by residual maturity - Government bonds (basis points)','Emerging markets','3M',95
+--UNION SELECT 5,'Credit Spread by residual maturity - Government bonds (basis points)','Emerging markets','6M',117
+--UNION SELECT 5,'Credit Spread by residual maturity - Government bonds (basis points)','Emerging markets','1Y',136
+--UNION SELECT 5,'Credit Spread by residual maturity - Government bonds (basis points)','Emerging markets','2Y',214
+
+----TABLE 6-------------------------------------------------------------------------------------------------------------------
+
+--UNION SELECT 6,'Corporate credit spreads (basis points)','AAA','Non-financial',121
+--UNION SELECT 6,'Corporate credit spreads (basis points)','AAA','Financial covered',92
+--UNION SELECT 6,'Corporate credit spreads (basis points)','AAA','Financial',129
+--UNION SELECT 6,'Corporate credit spreads (basis points)','AAA','ABS',137
+--UNION SELECT 6,'Corporate credit spreads (basis points)','AA','Non-financial',124
+--UNION SELECT 6,'Corporate credit spreads (basis points)','AA','Financial covered',106
+--UNION SELECT 6,'Corporate credit spreads (basis points)','AA','Financial',149
+--UNION SELECT 6,'Corporate credit spreads (basis points)','AA','ABS',144
+--UNION SELECT 6,'Corporate credit spreads (basis points)','A','Non-financial',147
+--UNION SELECT 6,'Corporate credit spreads (basis points)','A','Financial covered',120
+--UNION SELECT 6,'Corporate credit spreads (basis points)','A','Financial',162
+--UNION SELECT 6,'Corporate credit spreads (basis points)','A','ABS',190
+--UNION SELECT 6,'Corporate credit spreads (basis points)','BBB','Non-financial',210
+--UNION SELECT 6,'Corporate credit spreads (basis points)','BBB','Financial covered',196
+--UNION SELECT 6,'Corporate credit spreads (basis points)','BBB','Financial',253
+--UNION SELECT 6,'Corporate credit spreads (basis points)','BBB','ABS',261
+--UNION SELECT 6,'Corporate credit spreads (basis points)','BB','Non-financial',273
+--UNION SELECT 6,'Corporate credit spreads (basis points)','BB','Financial covered',247
+--UNION SELECT 6,'Corporate credit spreads (basis points)','BB','Financial',313
+--UNION SELECT 6,'Corporate credit spreads (basis points)','BB','ABS',329
+--UNION SELECT 6,'Corporate credit spreads (basis points)','B','Non-financial',329
+--UNION SELECT 6,'Corporate credit spreads (basis points)','B','Financial covered',297
+--UNION SELECT 6,'Corporate credit spreads (basis points)','B','Financial',372
+--UNION SELECT 6,'Corporate credit spreads (basis points)','B','ABS',329
+--UNION SELECT 6,'Corporate credit spreads (basis points)','≤CCC','Non-financial',397
+--UNION SELECT 6,'Corporate credit spreads (basis points)','≤CCC','Financial covered',366
+--UNION SELECT 6,'Corporate credit spreads (basis points)','≤CCC','Financial',453
+--UNION SELECT 6,'Corporate credit spreads (basis points)','≤CCC','ABS',329
+
+----TABLE 7-------------------------------------------------------------------------------------------------------------------
+
+--UNION SELECT 7,'Loss given default','Senior exposure','Loss given default (%)',45
+--UNION SELECT 7,'Loss given default','Subordinated exposure','Loss given default (%)',75
+
+----TABLE 8-------------------------------------------------------------------------------------------------------------------
+
+--UNION SELECT 8,'Interest rate yield shocks absolute changes (basis points)','EU Euro area Interest rate swap on the EUR (euro)','1M',87
+--UNION SELECT 8,'Interest rate yield shocks absolute changes (basis points)','EU Euro area Interest rate swap on the EUR (euro)','3M',99
+--UNION SELECT 8,'Interest rate yield shocks absolute changes (basis points)','EU Euro area Interest rate swap on the EUR (euro)','6M',112
+--UNION SELECT 8,'Interest rate yield shocks absolute changes (basis points)','EU Euro area Interest rate swap on the EUR (euro)','1Y',120
+--UNION SELECT 8,'Interest rate yield shocks absolute changes (basis points)','EU Euro area Interest rate swap on the EUR (euro)','2Y',130
+--UNION SELECT 8,'Interest rate yield shocks absolute changes (basis points)','EU Bulgaria Interest rate swap on the BGN (Bulgarian lev)','1M',112
+--UNION SELECT 8,'Interest rate yield shocks absolute changes (basis points)','EU Bulgaria Interest rate swap on the BGN (Bulgarian lev)','3M',130
+--UNION SELECT 8,'Interest rate yield shocks absolute changes (basis points)','EU Bulgaria Interest rate swap on the BGN (Bulgarian lev)','6M',148
+--UNION SELECT 8,'Interest rate yield shocks absolute changes (basis points)','EU Bulgaria Interest rate swap on the BGN (Bulgarian lev)','1Y',156
+--UNION SELECT 8,'Interest rate yield shocks absolute changes (basis points)','EU Bulgaria Interest rate swap on the BGN (Bulgarian lev)','2Y',166
+--UNION SELECT 8,'Interest rate yield shocks absolute changes (basis points)','EU Czech Republic Interest rate swap on the CZK (Czech koruna)','1M',110
+--UNION SELECT 8,'Interest rate yield shocks absolute changes (basis points)','EU Czech Republic Interest rate swap on the CZK (Czech koruna)','3M',112
+--UNION SELECT 8,'Interest rate yield shocks absolute changes (basis points)','EU Czech Republic Interest rate swap on the CZK (Czech koruna)','6M',125
+--UNION SELECT 8,'Interest rate yield shocks absolute changes (basis points)','EU Czech Republic Interest rate swap on the CZK (Czech koruna)','1Y',133
+--UNION SELECT 8,'Interest rate yield shocks absolute changes (basis points)','EU Czech Republic Interest rate swap on the CZK (Czech koruna)','2Y',144
+--UNION SELECT 8,'Interest rate yield shocks absolute changes (basis points)','EU Denmark Interest rate swap on the DKK (Danish krone)','1M',91
+--UNION SELECT 8,'Interest rate yield shocks absolute changes (basis points)','EU Denmark Interest rate swap on the DKK (Danish krone)','3M',105
+--UNION SELECT 8,'Interest rate yield shocks absolute changes (basis points)','EU Denmark Interest rate swap on the DKK (Danish krone)','6M',115
+--UNION SELECT 8,'Interest rate yield shocks absolute changes (basis points)','EU Denmark Interest rate swap on the DKK (Danish krone)','1Y',124
+--UNION SELECT 8,'Interest rate yield shocks absolute changes (basis points)','EU Denmark Interest rate swap on the DKK (Danish krone)','2Y',132
+--UNION SELECT 8,'Interest rate yield shocks absolute changes (basis points)','EU Hungary Interest rate swap on the HUF (Hungarian forint)','1M',170
+--UNION SELECT 8,'Interest rate yield shocks absolute changes (basis points)','EU Hungary Interest rate swap on the HUF (Hungarian forint)','3M',182
+--UNION SELECT 8,'Interest rate yield shocks absolute changes (basis points)','EU Hungary Interest rate swap on the HUF (Hungarian forint)','6M',191
+--UNION SELECT 8,'Interest rate yield shocks absolute changes (basis points)','EU Hungary Interest rate swap on the HUF (Hungarian forint)','1Y',206
+--UNION SELECT 8,'Interest rate yield shocks absolute changes (basis points)','EU Hungary Interest rate swap on the HUF (Hungarian forint)','2Y',222
+--UNION SELECT 8,'Interest rate yield shocks absolute changes (basis points)','EU Poland Interest rate swap on the PLN (Polish zloty)','1M',101
+--UNION SELECT 8,'Interest rate yield shocks absolute changes (basis points)','EU Poland Interest rate swap on the PLN (Polish zloty)','3M',108
+--UNION SELECT 8,'Interest rate yield shocks absolute changes (basis points)','EU Poland Interest rate swap on the PLN (Polish zloty)','6M',124
+--UNION SELECT 8,'Interest rate yield shocks absolute changes (basis points)','EU Poland Interest rate swap on the PLN (Polish zloty)','1Y',133
+--UNION SELECT 8,'Interest rate yield shocks absolute changes (basis points)','EU Poland Interest rate swap on the PLN (Polish zloty)','2Y',144
+--UNION SELECT 8,'Interest rate yield shocks absolute changes (basis points)','EU Romania Interest rate swap on the RON (Romanian leu)','1M',112
+--UNION SELECT 8,'Interest rate yield shocks absolute changes (basis points)','EU Romania Interest rate swap on the RON (Romanian leu)','3M',130
+--UNION SELECT 8,'Interest rate yield shocks absolute changes (basis points)','EU Romania Interest rate swap on the RON (Romanian leu)','6M',148
+--UNION SELECT 8,'Interest rate yield shocks absolute changes (basis points)','EU Romania Interest rate swap on the RON (Romanian leu)','1Y',154
+--UNION SELECT 8,'Interest rate yield shocks absolute changes (basis points)','EU Romania Interest rate swap on the RON (Romanian leu)','2Y',161
+--UNION SELECT 8,'Interest rate yield shocks absolute changes (basis points)','EU Sweden Interest rate swap on the SEK (Swedish krona)','1M',92
+--UNION SELECT 8,'Interest rate yield shocks absolute changes (basis points)','EU Sweden Interest rate swap on the SEK (Swedish krona)','3M',105
+--UNION SELECT 8,'Interest rate yield shocks absolute changes (basis points)','EU Sweden Interest rate swap on the SEK (Swedish krona)','6M',115
+--UNION SELECT 8,'Interest rate yield shocks absolute changes (basis points)','EU Sweden Interest rate swap on the SEK (Swedish krona)','1Y',126
+--UNION SELECT 8,'Interest rate yield shocks absolute changes (basis points)','EU Sweden Interest rate swap on the SEK (Swedish krona)','2Y',135
+--UNION SELECT 8,'Interest rate yield shocks absolute changes (basis points)','Rest of Europe United Kingdom Interest rate swap on the GBP (British pound)','1M',92
+--UNION SELECT 8,'Interest rate yield shocks absolute changes (basis points)','Rest of Europe United Kingdom Interest rate swap on the GBP (British pound)','3M',107
+--UNION SELECT 8,'Interest rate yield shocks absolute changes (basis points)','Rest of Europe United Kingdom Interest rate swap on the GBP (British pound)','6M',121
+--UNION SELECT 8,'Interest rate yield shocks absolute changes (basis points)','Rest of Europe United Kingdom Interest rate swap on the GBP (British pound)','1Y',129
+--UNION SELECT 8,'Interest rate yield shocks absolute changes (basis points)','Rest of Europe United Kingdom Interest rate swap on the GBP (British pound)','2Y',135
+--UNION SELECT 8,'Interest rate yield shocks absolute changes (basis points)','Rest of Europe Norway Interest rate swap on the NOK (Norwegian krone)','1M',90
+--UNION SELECT 8,'Interest rate yield shocks absolute changes (basis points)','Rest of Europe Norway Interest rate swap on the NOK (Norwegian krone)','3M',104
+--UNION SELECT 8,'Interest rate yield shocks absolute changes (basis points)','Rest of Europe Norway Interest rate swap on the NOK (Norwegian krone)','6M',113
+--UNION SELECT 8,'Interest rate yield shocks absolute changes (basis points)','Rest of Europe Norway Interest rate swap on the NOK (Norwegian krone)','1Y',123
+--UNION SELECT 8,'Interest rate yield shocks absolute changes (basis points)','Rest of Europe Norway Interest rate swap on the NOK (Norwegian krone)','2Y',133
+--UNION SELECT 8,'Interest rate yield shocks absolute changes (basis points)','Rest of Europe Switzerland Interest rate swap on the CHF (Swiss franc)','1M',64
+--UNION SELECT 8,'Interest rate yield shocks absolute changes (basis points)','Rest of Europe Switzerland Interest rate swap on the CHF (Swiss franc)','3M',83
+--UNION SELECT 8,'Interest rate yield shocks absolute changes (basis points)','Rest of Europe Switzerland Interest rate swap on the CHF (Swiss franc)','6M',107
+--UNION SELECT 8,'Interest rate yield shocks absolute changes (basis points)','Rest of Europe Switzerland Interest rate swap on the CHF (Swiss franc)','1Y',122
+--UNION SELECT 8,'Interest rate yield shocks absolute changes (basis points)','Rest of Europe Switzerland Interest rate swap on the CHF (Swiss franc)','2Y',136
+--UNION SELECT 8,'Interest rate yield shocks absolute changes (basis points)','Rest of Europe Turkey Interest rate swap on the TRY (Turkish lira)','1M',195
+--UNION SELECT 8,'Interest rate yield shocks absolute changes (basis points)','Rest of Europe Turkey Interest rate swap on the TRY (Turkish lira)','3M',250
+--UNION SELECT 8,'Interest rate yield shocks absolute changes (basis points)','Rest of Europe Turkey Interest rate swap on the TRY (Turkish lira)','6M',305
+--UNION SELECT 8,'Interest rate yield shocks absolute changes (basis points)','Rest of Europe Turkey Interest rate swap on the TRY (Turkish lira)','1Y',322
+--UNION SELECT 8,'Interest rate yield shocks absolute changes (basis points)','Rest of Europe Turkey Interest rate swap on the TRY (Turkish lira)','2Y',340
+--UNION SELECT 8,'Interest rate yield shocks absolute changes (basis points)','North America Canada Interest rate swap on the CAD (Canadian dollar)','1M',98
+--UNION SELECT 8,'Interest rate yield shocks absolute changes (basis points)','North America Canada Interest rate swap on the CAD (Canadian dollar)','3M',112
+--UNION SELECT 8,'Interest rate yield shocks absolute changes (basis points)','North America Canada Interest rate swap on the CAD (Canadian dollar)','6M',127
+--UNION SELECT 8,'Interest rate yield shocks absolute changes (basis points)','North America Canada Interest rate swap on the CAD (Canadian dollar)','1Y',137
+--UNION SELECT 8,'Interest rate yield shocks absolute changes (basis points)','North America Canada Interest rate swap on the CAD (Canadian dollar)','2Y',141
+--UNION SELECT 8,'Interest rate yield shocks absolute changes (basis points)','North America United States Interest rate swap on the USD (US dollar)','1M',97
+--UNION SELECT 8,'Interest rate yield shocks absolute changes (basis points)','North America United States Interest rate swap on the USD (US dollar)','3M',111
+--UNION SELECT 8,'Interest rate yield shocks absolute changes (basis points)','North America United States Interest rate swap on the USD (US dollar)','6M',126
+--UNION SELECT 8,'Interest rate yield shocks absolute changes (basis points)','North America United States Interest rate swap on the USD (US dollar)','1Y',133
+--UNION SELECT 8,'Interest rate yield shocks absolute changes (basis points)','North America United States Interest rate swap on the USD (US dollar)','2Y',139
+--UNION SELECT 8,'Interest rate yield shocks absolute changes (basis points)','Australia and Pacific Australia Interest rate swap on the AUD (Australian dollar)','1M',99
+--UNION SELECT 8,'Interest rate yield shocks absolute changes (basis points)','Australia and Pacific Australia Interest rate swap on the AUD (Australian dollar)','3M',113
+--UNION SELECT 8,'Interest rate yield shocks absolute changes (basis points)','Australia and Pacific Australia Interest rate swap on the AUD (Australian dollar)','6M',139
+--UNION SELECT 8,'Interest rate yield shocks absolute changes (basis points)','Australia and Pacific Australia Interest rate swap on the AUD (Australian dollar)','1Y',142
+--UNION SELECT 8,'Interest rate yield shocks absolute changes (basis points)','Australia and Pacific Australia Interest rate swap on the AUD (Australian dollar)','2Y',152
+--UNION SELECT 8,'Interest rate yield shocks absolute changes (basis points)','South and Central America Chile Interest rate swap on the CLP (Chilean peso)','1M',167
+--UNION SELECT 8,'Interest rate yield shocks absolute changes (basis points)','South and Central America Chile Interest rate swap on the CLP (Chilean peso)','3M',180
+--UNION SELECT 8,'Interest rate yield shocks absolute changes (basis points)','South and Central America Chile Interest rate swap on the CLP (Chilean peso)','6M',193
+--UNION SELECT 8,'Interest rate yield shocks absolute changes (basis points)','South and Central America Chile Interest rate swap on the CLP (Chilean peso)','1Y',206
+--UNION SELECT 8,'Interest rate yield shocks absolute changes (basis points)','South and Central America Chile Interest rate swap on the CLP (Chilean peso)','2Y',220
+--UNION SELECT 8,'Interest rate yield shocks absolute changes (basis points)','South and Central America Colombia Interest rate swap on the COP (Colombian peso)','1M',218
+--UNION SELECT 8,'Interest rate yield shocks absolute changes (basis points)','South and Central America Colombia Interest rate swap on the COP (Colombian peso)','3M',224
+--UNION SELECT 8,'Interest rate yield shocks absolute changes (basis points)','South and Central America Colombia Interest rate swap on the COP (Colombian peso)','6M',246
+--UNION SELECT 8,'Interest rate yield shocks absolute changes (basis points)','South and Central America Colombia Interest rate swap on the COP (Colombian peso)','1Y',251
+--UNION SELECT 8,'Interest rate yield shocks absolute changes (basis points)','South and Central America Colombia Interest rate swap on the COP (Colombian peso)','2Y',256
+--UNION SELECT 8,'Interest rate yield shocks absolute changes (basis points)','South and Central America Mexico Interest rate swap on the MXN (Mexican peso)','1M',168
+--UNION SELECT 8,'Interest rate yield shocks absolute changes (basis points)','South and Central America Mexico Interest rate swap on the MXN (Mexican peso)','3M',171
+--UNION SELECT 8,'Interest rate yield shocks absolute changes (basis points)','South and Central America Mexico Interest rate swap on the MXN (Mexican peso)','6M',184
+--UNION SELECT 8,'Interest rate yield shocks absolute changes (basis points)','South and Central America Mexico Interest rate swap on the MXN (Mexican peso)','1Y',220
+--UNION SELECT 8,'Interest rate yield shocks absolute changes (basis points)','South and Central America Mexico Interest rate swap on the MXN (Mexican peso)','2Y',235
+--UNION SELECT 8,'Interest rate yield shocks absolute changes (basis points)','Asia China Interest rate swap on the CNY (Chinese yuan)','1M',98
+--UNION SELECT 8,'Interest rate yield shocks absolute changes (basis points)','Asia China Interest rate swap on the CNY (Chinese yuan)','3M',115
+--UNION SELECT 8,'Interest rate yield shocks absolute changes (basis points)','Asia China Interest rate swap on the CNY (Chinese yuan)','6M',135
+--UNION SELECT 8,'Interest rate yield shocks absolute changes (basis points)','Asia China Interest rate swap on the CNY (Chinese yuan)','1Y',154
+--UNION SELECT 8,'Interest rate yield shocks absolute changes (basis points)','Asia China Interest rate swap on the CNY (Chinese yuan)','2Y',177
+--UNION SELECT 8,'Interest rate yield shocks absolute changes (basis points)','Asia Hong Kong Interest rate swap on the HKD (Hong Kong dollar)','1M',108
+--UNION SELECT 8,'Interest rate yield shocks absolute changes (basis points)','Asia Hong Kong Interest rate swap on the HKD (Hong Kong dollar)','3M',125
+--UNION SELECT 8,'Interest rate yield shocks absolute changes (basis points)','Asia Hong Kong Interest rate swap on the HKD (Hong Kong dollar)','6M',144
+--UNION SELECT 8,'Interest rate yield shocks absolute changes (basis points)','Asia Hong Kong Interest rate swap on the HKD (Hong Kong dollar)','1Y',157
+--UNION SELECT 8,'Interest rate yield shocks absolute changes (basis points)','Asia Hong Kong Interest rate swap on the HKD (Hong Kong dollar)','2Y',179
+--UNION SELECT 8,'Interest rate yield shocks absolute changes (basis points)','Asia Japan Interest rate swap on the JPY (Japanese yen)','1M',8
+--UNION SELECT 8,'Interest rate yield shocks absolute changes (basis points)','Asia Japan Interest rate swap on the JPY (Japanese yen)','3M',9
+--UNION SELECT 8,'Interest rate yield shocks absolute changes (basis points)','Asia Japan Interest rate swap on the JPY (Japanese yen)','6M',14
+--UNION SELECT 8,'Interest rate yield shocks absolute changes (basis points)','Asia Japan Interest rate swap on the JPY (Japanese yen)','1Y',19
+--UNION SELECT 8,'Interest rate yield shocks absolute changes (basis points)','Asia Japan Interest rate swap on the JPY (Japanese yen)','2Y',29
+--UNION SELECT 8,'Interest rate yield shocks absolute changes (basis points)','Asia Malaysia Interest rate swap on the MYR (Malaysian ringgit)','1M',34
+--UNION SELECT 8,'Interest rate yield shocks absolute changes (basis points)','Asia Malaysia Interest rate swap on the MYR (Malaysian ringgit)','3M',51
+--UNION SELECT 8,'Interest rate yield shocks absolute changes (basis points)','Asia Malaysia Interest rate swap on the MYR (Malaysian ringgit)','6M',83
+--UNION SELECT 8,'Interest rate yield shocks absolute changes (basis points)','Asia Malaysia Interest rate swap on the MYR (Malaysian ringgit)','1Y',104
+--UNION SELECT 8,'Interest rate yield shocks absolute changes (basis points)','Asia Malaysia Interest rate swap on the MYR (Malaysian ringgit)','2Y',107
+--UNION SELECT 8,'Interest rate yield shocks absolute changes (basis points)','Asia Singapore Interest rate swap on the SGD (Singapore dollar)','1M',119
+--UNION SELECT 8,'Interest rate yield shocks absolute changes (basis points)','Asia Singapore Interest rate swap on the SGD (Singapore dollar)','3M',130
+--UNION SELECT 8,'Interest rate yield shocks absolute changes (basis points)','Asia Singapore Interest rate swap on the SGD (Singapore dollar)','6M',138
+--UNION SELECT 8,'Interest rate yield shocks absolute changes (basis points)','Asia Singapore Interest rate swap on the SGD (Singapore dollar)','1Y',148
+--UNION SELECT 8,'Interest rate yield shocks absolute changes (basis points)','Asia Singapore Interest rate swap on the SGD (Singapore dollar)','2Y',148
+--UNION SELECT 8,'Interest rate yield shocks absolute changes (basis points)','Africa South Africa Interest rate swap on the ZAR (South African rand)','1M',162
+--UNION SELECT 8,'Interest rate yield shocks absolute changes (basis points)','Africa South Africa Interest rate swap on the ZAR (South African rand)','3M',166
+--UNION SELECT 8,'Interest rate yield shocks absolute changes (basis points)','Africa South Africa Interest rate swap on the ZAR (South African rand)','6M',169
+--UNION SELECT 8,'Interest rate yield shocks absolute changes (basis points)','Africa South Africa Interest rate swap on the ZAR (South African rand)','1Y',188
+--UNION SELECT 8,'Interest rate yield shocks absolute changes (basis points)','Africa South Africa Interest rate swap on the ZAR (South African rand)','2Y',210
+
+----TABLE 9-------------------------------------------------------------------------------------------------------------------
+
+--UNION SELECT 9,'Interest rate yield shocks absolute changes (basis points)','EU','1M',109
+--UNION SELECT 9,'Interest rate yield shocks absolute changes (basis points)','EU','3M',121
+--UNION SELECT 9,'Interest rate yield shocks absolute changes (basis points)','EU','6M',135
+--UNION SELECT 9,'Interest rate yield shocks absolute changes (basis points)','EU','1Y',144
+--UNION SELECT 9,'Interest rate yield shocks absolute changes (basis points)','EU','2Y',154
+--UNION SELECT 9,'Interest rate yield shocks absolute changes (basis points)','Other advanced economies','1M',85
+--UNION SELECT 9,'Interest rate yield shocks absolute changes (basis points)','Other advanced economies','3M',99
+--UNION SELECT 9,'Interest rate yield shocks absolute changes (basis points)','Other advanced economies','6M',115
+--UNION SELECT 9,'Interest rate yield shocks absolute changes (basis points)','Other advanced economies','1Y',128
+--UNION SELECT 9,'Interest rate yield shocks absolute changes (basis points)','Other advanced economies','2Y',141
+--UNION SELECT 9,'Interest rate yield shocks absolute changes (basis points)','Other emerging markets','1M',140
+--UNION SELECT 9,'Interest rate yield shocks absolute changes (basis points)','Other emerging markets','3M',155
+--UNION SELECT 9,'Interest rate yield shocks absolute changes (basis points)','Other emerging markets','6M',174
+--UNION SELECT 9,'Interest rate yield shocks absolute changes (basis points)','Other emerging markets','1Y',196
+--UNION SELECT 9,'Interest rate yield shocks absolute changes (basis points)','Other emerging markets','2Y',210
+
+----TABLE 10-------------------------------------------------------------------------------------------------------------------
+
+--UNION SELECT 10,'FX shocks (appreciation of the EUR against the USD) relative changes (%)','EURCZK','Shock',4.80
+--UNION SELECT 10,'FX shocks (appreciation of the EUR against the USD) relative changes (%)','EURHUF','Shock',10.90
+--UNION SELECT 10,'FX shocks (appreciation of the EUR against the USD) relative changes (%)','EURPLN','Shock',7.52
+--UNION SELECT 10,'FX shocks (appreciation of the EUR against the USD) relative changes (%)','EURRON','Shock',2.87
+--UNION SELECT 10,'FX shocks (appreciation of the EUR against the USD) relative changes (%)','EURSEK','Shock',9.33
+--UNION SELECT 10,'FX shocks (appreciation of the EUR against the USD) relative changes (%)','EURRSD','Shock',2.10
+--UNION SELECT 10,'FX shocks (appreciation of the EUR against the USD) relative changes (%)','EURNOK','Shock',12.85
+--UNION SELECT 10,'FX shocks (appreciation of the EUR against the USD) relative changes (%)','EURGBP','Shock',8.79
+--UNION SELECT 10,'FX shocks (appreciation of the EUR against the USD) relative changes (%)','EURCHF','Shock',5.72
+--UNION SELECT 10,'FX shocks (appreciation of the EUR against the USD) relative changes (%)','EURTRY','Shock',16.95
+--UNION SELECT 10,'FX shocks (appreciation of the EUR against the USD) relative changes (%)','USDCAD','Shock',-5.92
+--UNION SELECT 10,'FX shocks (appreciation of the EUR against the USD) relative changes (%)','EURUSD','Shock',7.86
+--UNION SELECT 10,'FX shocks (appreciation of the EUR against the USD) relative changes (%)','AUDUSD','Shock',10.59
+--UNION SELECT 10,'FX shocks (appreciation of the EUR against the USD) relative changes (%)','NZDUSD','Shock',10.44
+--UNION SELECT 10,'FX shocks (appreciation of the EUR against the USD) relative changes (%)','USDARS','Shock',9.24
+--UNION SELECT 10,'FX shocks (appreciation of the EUR against the USD) relative changes (%)','USDBRL','Shock',-17.62
+--UNION SELECT 10,'FX shocks (appreciation of the EUR against the USD) relative changes (%)','USDMXN','Shock',-12.46
+--UNION SELECT 10,'FX shocks (appreciation of the EUR against the USD) relative changes (%)','USDCNY','Shock',-3.38
+--UNION SELECT 10,'FX shocks (appreciation of the EUR against the USD) relative changes (%)','USDHKD','Shock',-0.65
+--UNION SELECT 10,'FX shocks (appreciation of the EUR against the USD) relative changes (%)','USDINR','Shock',-2.99
+--UNION SELECT 10,'FX shocks (appreciation of the EUR against the USD) relative changes (%)','USDJPY','Shock',-8.47
+--UNION SELECT 10,'FX shocks (appreciation of the EUR against the USD) relative changes (%)','USDKRW','Shock',-8.11
+--UNION SELECT 10,'FX shocks (appreciation of the EUR against the USD) relative changes (%)','USDMYR','Shock',-3.64
+--UNION SELECT 10,'FX shocks (appreciation of the EUR against the USD) relative changes (%)','USDSGD','Shock',-4.97
+--UNION SELECT 10,'FX shocks (appreciation of the EUR against the USD) relative changes (%)','USDTHB','Shock',-7.21
+--UNION SELECT 10,'FX shocks (appreciation of the EUR against the USD) relative changes (%)','USDZAR','Shock',-12.16
+
+----TABLE 11-------------------------------------------------------------------------------------------------------------------
+
+--UNION SELECT 11,'FX shocks (depreciation of the EUR against the USD) relative changes (%)','EURCZK','Shock',-6.44
+--UNION SELECT 11,'FX shocks (depreciation of the EUR against the USD) relative changes (%)','EURHUF','Shock',-13.46
+--UNION SELECT 11,'FX shocks (depreciation of the EUR against the USD) relative changes (%)','EURPLN','Shock',-8.38
+--UNION SELECT 11,'FX shocks (depreciation of the EUR against the USD) relative changes (%)','EURRON','Shock',-2.70
+--UNION SELECT 11,'FX shocks (depreciation of the EUR against the USD) relative changes (%)','EURSEK','Shock',-5.47
+--UNION SELECT 11,'FX shocks (depreciation of the EUR against the USD) relative changes (%)','EURRSD','Shock',-1.95
+--UNION SELECT 11,'FX shocks (depreciation of the EUR against the USD) relative changes (%)','EURNOK','Shock',-6.77
+--UNION SELECT 11,'FX shocks (depreciation of the EUR against the USD) relative changes (%)','EURGBP','Shock',-5.92
+--UNION SELECT 11,'FX shocks (depreciation of the EUR against the USD) relative changes (%)','EURCHF','Shock',-8.21
+--UNION SELECT 11,'FX shocks (depreciation of the EUR against the USD) relative changes (%)','EURTRY','Shock',-7.74
+--UNION SELECT 11,'FX shocks (depreciation of the EUR against the USD) relative changes (%)','USDCAD','Shock',10.11
+--UNION SELECT 11,'FX shocks (depreciation of the EUR against the USD) relative changes (%)','EURUSD','Shock',-11.34
+--UNION SELECT 11,'FX shocks (depreciation of the EUR against the USD) relative changes (%)','AUDUSD','Shock',-15.68
+--UNION SELECT 11,'FX shocks (depreciation of the EUR against the USD) relative changes (%)','NZDUSD','Shock',-14.33
+--UNION SELECT 11,'FX shocks (depreciation of the EUR against the USD) relative changes (%)','USDARS','Shock',17.90
+--UNION SELECT 11,'FX shocks (depreciation of the EUR against the USD) relative changes (%)','USDBRL','Shock',16.00
+--UNION SELECT 11,'FX shocks (depreciation of the EUR against the USD) relative changes (%)','USDMXN','Shock',9.14
+--UNION SELECT 11,'FX shocks (depreciation of the EUR against the USD) relative changes (%)','USDCNY','Shock',7.38
+--UNION SELECT 11,'FX shocks (depreciation of the EUR against the USD) relative changes (%)','USDHKD','Shock',0.80
+--UNION SELECT 11,'FX shocks (depreciation of the EUR against the USD) relative changes (%)','USDINR','Shock',6.85
+--UNION SELECT 11,'FX shocks (depreciation of the EUR against the USD) relative changes (%)','USDJPY','Shock',14.25
+--UNION SELECT 11,'FX shocks (depreciation of the EUR against the USD) relative changes (%)','USDKRW','Shock',12.95
+--UNION SELECT 11,'FX shocks (depreciation of the EUR against the USD) relative changes (%)','USDMYR','Shock',6.53
+--UNION SELECT 11,'FX shocks (depreciation of the EUR against the USD) relative changes (%)','USDSGD','Shock',5.55
+--UNION SELECT 11,'FX shocks (depreciation of the EUR against the USD) relative changes (%)','USDTHB','Shock',8.90
+--UNION SELECT 11,'FX shocks (depreciation of the EUR against the USD) relative changes (%)','USDZAR','Shock',18.84
+
+----TABLE 12-------------------------------------------------------------------------------------------------------------------
+
+--UNION SELECT 12,'Bucket factor','Weekly liquid assets (bucket 1)','Bucket factor (%)',100
+--UNION SELECT 12,'Bucket factor','Weekly liquid assets (bucket 2)','Bucket factor (%)',85
+
+----TABLE 13-------------------------------------------------------------------------------------------------------------------
+
+--UNION SELECT 13,'Net outflows (level of redemption)','Professional investor','Net outflows (%)',40
+--UNION SELECT 13,'Net outflows (level of redemption)','Retail investor','Net outflows (%)',30
+
+----TABLE 14-------------------------------------------------------------------------------------------------------------------
+
+--UNION SELECT 14,'Net outflows (macro systematic shocks)','Professional investor','Net outflows (%)',20
+--UNION SELECT 14,'Net outflows (macro systematic shocks)','Retail investor','Net outflows (%)',10
+
+--UNION SELECT 13,'Choc de marché','Choc de marché','Choc de marché (%)',95
