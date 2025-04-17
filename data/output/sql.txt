@@ -1,3 +1,12 @@
+--ELSE IF @DateEtalonnage >= '01/01/2025' and @DateEtalonnage <= '31/12/2025'
+--INSERT INTO [MarketDate].[dbo].[ST_MMF_Parameters]
+--SELECT
+--  0 as 'Table_ID'
+--  'Etalonnages' as 'Table_Description'
+--  'YYYY/MM étalonnages' as 'Line_Description'
+--  'YYYY/MM étalonnages' as 'Column_Description'
+--  202501 as 'Value'
+
 ----TABLE 1-------------------------------------------------------------------------------------------------------------------
 
 --UNION SELECT 1,'Liquidity discount factor - Sovereign bonds by residual maturity - Reference countries (in %)','DE','3M',0.18

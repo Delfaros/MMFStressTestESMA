@@ -277,7 +277,6 @@ def parse_table_8(raw_text):
         else:
             # Cas de secours: tout le texte
             country = text_part
-
         rows.append([country, v1, v2, v3, v4, v5])
 
     df = pd.DataFrame(
