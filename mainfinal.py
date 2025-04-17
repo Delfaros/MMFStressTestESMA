@@ -353,34 +353,29 @@ def parse_table_11(raw_text):
 def parse_table_12_and_13(raw_text):
     import pandas as pd
     import re
-    
-    # Nettoyage initial si nécessaire
-    text = raw_text.strip() if hasattr(raw_text, 'strip') else clean_pdf_text(raw_text)
+
+    text = clean_pdf_text(raw_text)
     lines = [l.strip() for l in text.splitlines() if l.strip()]
-    
-    # ----- Extraction du tableau 13 (comme dans le code original) -----
+
+    # ---------- Parse Tableau 13 ----------
     investor_pattern = re.compile(r'(Professional investor|Retail investor)\s+(\d+)')
     investor_lines = [line for line in lines if "investor" in line.lower()]
     df13_rows = []
-    
     for line in investor_lines:
         match = investor_pattern.search(line)
         if match:
             df13_rows.append([match.group(1), match.group(2)])
-    
     df13 = pd.DataFrame(df13_rows, columns=['Investor', 'NetOutflows(%)'])
-    
-    # ----- Extraction des lignes commençant par x et se terminant au premier ) -----
-    # Recombiner toutes les lignes en un seul texte pour la recherche
-    full_text = ' '.join(lines)
-    
-    # Trouver toutes les occurrences commençant par x et se terminant au premier )
-    pattern = re.compile(r'(x\d+%[^)]*\))')
-    matches = pattern.findall(full_text)
-    
-    # Créer le DataFrame pour le tableau 12
-    df12 = pd.DataFrame(matches, columns=['BucketInfo'])
-    
+
+    # ---------- Parse Tableau 12 (Bucket %) ----------
+    buckets = []
+    for line in lines:
+        if "x100%" in line:
+            buckets.append(["Weekly liquid assets (bucket 1)", 100])
+        elif "x85%" in line:
+            buckets.append(["Weekly liquid assets (bucket 2)", 85])
+    df12 = pd.DataFrame(buckets, columns=["BucketInfo", "Pourcentage"])
+
     return df12, df13
 
 # ---------------------------------------------------------------------
