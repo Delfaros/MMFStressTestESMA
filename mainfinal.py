@@ -229,24 +229,63 @@ def parse_table_7(raw_text):
 # Parseur Tableau 8
 # ---------------------------------------------------------------------
 def parse_table_8(raw_text):
+    import re, pandas as pd
+
     text = clean_pdf_text(raw_text)
+    # On ne garde que les lignes non‑vides
     lines = [l.strip() for l in text.splitlines() if l.strip()]
     if len(lines) < 3:
         return pd.DataFrame()
-    header_tokens = lines[2].split()
-    columns = ["GeoCountryDesc", "1M", "3M", "6M", "1Y", "2Y"]
+
+    # Les 3 premières lignes sont le titre et l'en‑tête
     data_lines = lines[3:]
-    table_data = []
+
+    # Fusionner les retours à la ligne indésirables (continuations)
+    fixed = []
     for line in data_lines:
+        if fixed and line and line[0].islower():
+            fixed[-1] += " " + line
+        else:
+            fixed.append(line)
+
+    # Liste des zones géographiques à retirer
+    known_areas = [
+        "EU", "Rest of Europe", "North America",
+        "Australia and Pacific", "South and Central America",
+        "Asia", "Africa"
+    ]
+
+    rows = []
+    for line in fixed:
+        # On sépare à partir de la fin : 5 chiffres → 6 éléments
         parts = line.rsplit(maxsplit=5)
         if len(parts) < 6:
             continue
-        text_part = parts[0]
-        nums = parts[1:]
-        row = [text_part] + nums
-        table_data.append(row)
-    df = pd.DataFrame(table_data, columns=columns)
+        text_part, v1, v2, v3, v4, v5 = parts
+
+        # On enlève le préfixe "Zone géographique"
+        for area in known_areas:
+            if text_part.startswith(area + " "):
+                text_part = text_part[len(area):].strip()
+                break
+
+        # On repère la phrase-clé qui suit toujours le pays
+        # et on ne garde que ce qui précède
+        m = re.search(r"Interest rate swap", text_part)
+        if m:
+            country = text_part[:m.start()].strip()
+        else:
+            # Cas de secours: tout le texte
+            country = text_part
+
+        rows.append([country, v1, v2, v3, v4, v5])
+
+    df = pd.DataFrame(
+        rows,
+        columns=["Country", "1M", "3M", "6M", "1Y", "2Y"]
+    )
     return df
+
 
 # ---------------------------------------------------------------------
 # Parseur Tableau 9

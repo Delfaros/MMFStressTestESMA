@@ -269,202 +269,227 @@
 
 ----TABLE 8-------------------------------------------------------------------------------------------------------------------
 
---UNION SELECT 8,'Interest rate yield shocks absolute changes (basis points)','EU Euro area Interest rate swap on the EUR (euro)','1M',87
---UNION SELECT 8,'Interest rate yield shocks absolute changes (basis points)','EU Euro area Interest rate swap on the EUR (euro)','3M',99
---UNION SELECT 8,'Interest rate yield shocks absolute changes (basis points)','EU Euro area Interest rate swap on the EUR (euro)','6M',112
---UNION SELECT 8,'Interest rate yield shocks absolute changes (basis points)','EU Euro area Interest rate swap on the EUR (euro)','1Y',120
---UNION SELECT 8,'Interest rate yield shocks absolute changes (basis points)','EU Euro area Interest rate swap on the EUR (euro)','2Y',130
---UNION SELECT 8,'Interest rate yield shocks absolute changes (basis points)','EU Bulgaria Interest rate swap on the BGN (Bulgarian lev)','1M',112
---UNION SELECT 8,'Interest rate yield shocks absolute changes (basis points)','EU Bulgaria Interest rate swap on the BGN (Bulgarian lev)','3M',130
---UNION SELECT 8,'Interest rate yield shocks absolute changes (basis points)','EU Bulgaria Interest rate swap on the BGN (Bulgarian lev)','6M',148
---UNION SELECT 8,'Interest rate yield shocks absolute changes (basis points)','EU Bulgaria Interest rate swap on the BGN (Bulgarian lev)','1Y',156
---UNION SELECT 8,'Interest rate yield shocks absolute changes (basis points)','EU Bulgaria Interest rate swap on the BGN (Bulgarian lev)','2Y',166
---UNION SELECT 8,'Interest rate yield shocks absolute changes (basis points)','EU Czech Republic Interest rate swap on the CZK (Czech koruna)','1M',110
---UNION SELECT 8,'Interest rate yield shocks absolute changes (basis points)','EU Czech Republic Interest rate swap on the CZK (Czech koruna)','3M',112
---UNION SELECT 8,'Interest rate yield shocks absolute changes (basis points)','EU Czech Republic Interest rate swap on the CZK (Czech koruna)','6M',125
---UNION SELECT 8,'Interest rate yield shocks absolute changes (basis points)','EU Czech Republic Interest rate swap on the CZK (Czech koruna)','1Y',133
---UNION SELECT 8,'Interest rate yield shocks absolute changes (basis points)','EU Czech Republic Interest rate swap on the CZK (Czech koruna)','2Y',144
---UNION SELECT 8,'Interest rate yield shocks absolute changes (basis points)','EU Denmark Interest rate swap on the DKK (Danish krone)','1M',91
---UNION SELECT 8,'Interest rate yield shocks absolute changes (basis points)','EU Denmark Interest rate swap on the DKK (Danish krone)','3M',105
---UNION SELECT 8,'Interest rate yield shocks absolute changes (basis points)','EU Denmark Interest rate swap on the DKK (Danish krone)','6M',115
---UNION SELECT 8,'Interest rate yield shocks absolute changes (basis points)','EU Denmark Interest rate swap on the DKK (Danish krone)','1Y',124
---UNION SELECT 8,'Interest rate yield shocks absolute changes (basis points)','EU Denmark Interest rate swap on the DKK (Danish krone)','2Y',132
---UNION SELECT 8,'Interest rate yield shocks absolute changes (basis points)','EU Hungary Interest rate swap on the HUF (Hungarian forint)','1M',170
---UNION SELECT 8,'Interest rate yield shocks absolute changes (basis points)','EU Hungary Interest rate swap on the HUF (Hungarian forint)','3M',182
---UNION SELECT 8,'Interest rate yield shocks absolute changes (basis points)','EU Hungary Interest rate swap on the HUF (Hungarian forint)','6M',191
---UNION SELECT 8,'Interest rate yield shocks absolute changes (basis points)','EU Hungary Interest rate swap on the HUF (Hungarian forint)','1Y',206
---UNION SELECT 8,'Interest rate yield shocks absolute changes (basis points)','EU Hungary Interest rate swap on the HUF (Hungarian forint)','2Y',222
---UNION SELECT 8,'Interest rate yield shocks absolute changes (basis points)','EU Poland Interest rate swap on the PLN (Polish zloty)','1M',101
---UNION SELECT 8,'Interest rate yield shocks absolute changes (basis points)','EU Poland Interest rate swap on the PLN (Polish zloty)','3M',108
---UNION SELECT 8,'Interest rate yield shocks absolute changes (basis points)','EU Poland Interest rate swap on the PLN (Polish zloty)','6M',124
---UNION SELECT 8,'Interest rate yield shocks absolute changes (basis points)','EU Poland Interest rate swap on the PLN (Polish zloty)','1Y',133
---UNION SELECT 8,'Interest rate yield shocks absolute changes (basis points)','EU Poland Interest rate swap on the PLN (Polish zloty)','2Y',144
---UNION SELECT 8,'Interest rate yield shocks absolute changes (basis points)','EU Romania Interest rate swap on the RON (Romanian leu)','1M',112
---UNION SELECT 8,'Interest rate yield shocks absolute changes (basis points)','EU Romania Interest rate swap on the RON (Romanian leu)','3M',130
---UNION SELECT 8,'Interest rate yield shocks absolute changes (basis points)','EU Romania Interest rate swap on the RON (Romanian leu)','6M',148
---UNION SELECT 8,'Interest rate yield shocks absolute changes (basis points)','EU Romania Interest rate swap on the RON (Romanian leu)','1Y',154
---UNION SELECT 8,'Interest rate yield shocks absolute changes (basis points)','EU Romania Interest rate swap on the RON (Romanian leu)','2Y',161
---UNION SELECT 8,'Interest rate yield shocks absolute changes (basis points)','EU Sweden Interest rate swap on the SEK (Swedish krona)','1M',92
---UNION SELECT 8,'Interest rate yield shocks absolute changes (basis points)','EU Sweden Interest rate swap on the SEK (Swedish krona)','3M',105
---UNION SELECT 8,'Interest rate yield shocks absolute changes (basis points)','EU Sweden Interest rate swap on the SEK (Swedish krona)','6M',115
---UNION SELECT 8,'Interest rate yield shocks absolute changes (basis points)','EU Sweden Interest rate swap on the SEK (Swedish krona)','1Y',126
---UNION SELECT 8,'Interest rate yield shocks absolute changes (basis points)','EU Sweden Interest rate swap on the SEK (Swedish krona)','2Y',135
---UNION SELECT 8,'Interest rate yield shocks absolute changes (basis points)','Rest of Europe United Kingdom Interest rate swap on the GBP (British pound)','1M',92
---UNION SELECT 8,'Interest rate yield shocks absolute changes (basis points)','Rest of Europe United Kingdom Interest rate swap on the GBP (British pound)','3M',107
---UNION SELECT 8,'Interest rate yield shocks absolute changes (basis points)','Rest of Europe United Kingdom Interest rate swap on the GBP (British pound)','6M',121
---UNION SELECT 8,'Interest rate yield shocks absolute changes (basis points)','Rest of Europe United Kingdom Interest rate swap on the GBP (British pound)','1Y',129
---UNION SELECT 8,'Interest rate yield shocks absolute changes (basis points)','Rest of Europe United Kingdom Interest rate swap on the GBP (British pound)','2Y',135
---UNION SELECT 8,'Interest rate yield shocks absolute changes (basis points)','Rest of Europe Norway Interest rate swap on the NOK (Norwegian krone)','1M',90
---UNION SELECT 8,'Interest rate yield shocks absolute changes (basis points)','Rest of Europe Norway Interest rate swap on the NOK (Norwegian krone)','3M',104
---UNION SELECT 8,'Interest rate yield shocks absolute changes (basis points)','Rest of Europe Norway Interest rate swap on the NOK (Norwegian krone)','6M',113
---UNION SELECT 8,'Interest rate yield shocks absolute changes (basis points)','Rest of Europe Norway Interest rate swap on the NOK (Norwegian krone)','1Y',123
---UNION SELECT 8,'Interest rate yield shocks absolute changes (basis points)','Rest of Europe Norway Interest rate swap on the NOK (Norwegian krone)','2Y',133
---UNION SELECT 8,'Interest rate yield shocks absolute changes (basis points)','Rest of Europe Switzerland Interest rate swap on the CHF (Swiss franc)','1M',64
---UNION SELECT 8,'Interest rate yield shocks absolute changes (basis points)','Rest of Europe Switzerland Interest rate swap on the CHF (Swiss franc)','3M',83
---UNION SELECT 8,'Interest rate yield shocks absolute changes (basis points)','Rest of Europe Switzerland Interest rate swap on the CHF (Swiss franc)','6M',107
---UNION SELECT 8,'Interest rate yield shocks absolute changes (basis points)','Rest of Europe Switzerland Interest rate swap on the CHF (Swiss franc)','1Y',122
---UNION SELECT 8,'Interest rate yield shocks absolute changes (basis points)','Rest of Europe Switzerland Interest rate swap on the CHF (Swiss franc)','2Y',136
---UNION SELECT 8,'Interest rate yield shocks absolute changes (basis points)','Rest of Europe Turkey Interest rate swap on the TRY (Turkish lira)','1M',195
---UNION SELECT 8,'Interest rate yield shocks absolute changes (basis points)','Rest of Europe Turkey Interest rate swap on the TRY (Turkish lira)','3M',250
---UNION SELECT 8,'Interest rate yield shocks absolute changes (basis points)','Rest of Europe Turkey Interest rate swap on the TRY (Turkish lira)','6M',305
---UNION SELECT 8,'Interest rate yield shocks absolute changes (basis points)','Rest of Europe Turkey Interest rate swap on the TRY (Turkish lira)','1Y',322
---UNION SELECT 8,'Interest rate yield shocks absolute changes (basis points)','Rest of Europe Turkey Interest rate swap on the TRY (Turkish lira)','2Y',340
---UNION SELECT 8,'Interest rate yield shocks absolute changes (basis points)','North America Canada Interest rate swap on the CAD (Canadian dollar)','1M',98
---UNION SELECT 8,'Interest rate yield shocks absolute changes (basis points)','North America Canada Interest rate swap on the CAD (Canadian dollar)','3M',112
---UNION SELECT 8,'Interest rate yield shocks absolute changes (basis points)','North America Canada Interest rate swap on the CAD (Canadian dollar)','6M',127
---UNION SELECT 8,'Interest rate yield shocks absolute changes (basis points)','North America Canada Interest rate swap on the CAD (Canadian dollar)','1Y',137
---UNION SELECT 8,'Interest rate yield shocks absolute changes (basis points)','North America Canada Interest rate swap on the CAD (Canadian dollar)','2Y',141
---UNION SELECT 8,'Interest rate yield shocks absolute changes (basis points)','North America United States Interest rate swap on the USD (US dollar)','1M',97
---UNION SELECT 8,'Interest rate yield shocks absolute changes (basis points)','North America United States Interest rate swap on the USD (US dollar)','3M',111
---UNION SELECT 8,'Interest rate yield shocks absolute changes (basis points)','North America United States Interest rate swap on the USD (US dollar)','6M',126
---UNION SELECT 8,'Interest rate yield shocks absolute changes (basis points)','North America United States Interest rate swap on the USD (US dollar)','1Y',133
---UNION SELECT 8,'Interest rate yield shocks absolute changes (basis points)','North America United States Interest rate swap on the USD (US dollar)','2Y',139
---UNION SELECT 8,'Interest rate yield shocks absolute changes (basis points)','Australia and Pacific Australia Interest rate swap on the AUD (Australian dollar)','1M',99
---UNION SELECT 8,'Interest rate yield shocks absolute changes (basis points)','Australia and Pacific Australia Interest rate swap on the AUD (Australian dollar)','3M',113
---UNION SELECT 8,'Interest rate yield shocks absolute changes (basis points)','Australia and Pacific Australia Interest rate swap on the AUD (Australian dollar)','6M',139
---UNION SELECT 8,'Interest rate yield shocks absolute changes (basis points)','Australia and Pacific Australia Interest rate swap on the AUD (Australian dollar)','1Y',142
---UNION SELECT 8,'Interest rate yield shocks absolute changes (basis points)','Australia and Pacific Australia Interest rate swap on the AUD (Australian dollar)','2Y',152
---UNION SELECT 8,'Interest rate yield shocks absolute changes (basis points)','South and Central America Chile Interest rate swap on the CLP (Chilean peso)','1M',167
---UNION SELECT 8,'Interest rate yield shocks absolute changes (basis points)','South and Central America Chile Interest rate swap on the CLP (Chilean peso)','3M',180
---UNION SELECT 8,'Interest rate yield shocks absolute changes (basis points)','South and Central America Chile Interest rate swap on the CLP (Chilean peso)','6M',193
---UNION SELECT 8,'Interest rate yield shocks absolute changes (basis points)','South and Central America Chile Interest rate swap on the CLP (Chilean peso)','1Y',206
---UNION SELECT 8,'Interest rate yield shocks absolute changes (basis points)','South and Central America Chile Interest rate swap on the CLP (Chilean peso)','2Y',220
---UNION SELECT 8,'Interest rate yield shocks absolute changes (basis points)','South and Central America Colombia Interest rate swap on the COP (Colombian peso)','1M',218
---UNION SELECT 8,'Interest rate yield shocks absolute changes (basis points)','South and Central America Colombia Interest rate swap on the COP (Colombian peso)','3M',224
---UNION SELECT 8,'Interest rate yield shocks absolute changes (basis points)','South and Central America Colombia Interest rate swap on the COP (Colombian peso)','6M',246
---UNION SELECT 8,'Interest rate yield shocks absolute changes (basis points)','South and Central America Colombia Interest rate swap on the COP (Colombian peso)','1Y',251
---UNION SELECT 8,'Interest rate yield shocks absolute changes (basis points)','South and Central America Colombia Interest rate swap on the COP (Colombian peso)','2Y',256
---UNION SELECT 8,'Interest rate yield shocks absolute changes (basis points)','South and Central America Mexico Interest rate swap on the MXN (Mexican peso)','1M',168
---UNION SELECT 8,'Interest rate yield shocks absolute changes (basis points)','South and Central America Mexico Interest rate swap on the MXN (Mexican peso)','3M',171
---UNION SELECT 8,'Interest rate yield shocks absolute changes (basis points)','South and Central America Mexico Interest rate swap on the MXN (Mexican peso)','6M',184
---UNION SELECT 8,'Interest rate yield shocks absolute changes (basis points)','South and Central America Mexico Interest rate swap on the MXN (Mexican peso)','1Y',220
---UNION SELECT 8,'Interest rate yield shocks absolute changes (basis points)','South and Central America Mexico Interest rate swap on the MXN (Mexican peso)','2Y',235
---UNION SELECT 8,'Interest rate yield shocks absolute changes (basis points)','Asia China Interest rate swap on the CNY (Chinese yuan)','1M',98
---UNION SELECT 8,'Interest rate yield shocks absolute changes (basis points)','Asia China Interest rate swap on the CNY (Chinese yuan)','3M',115
---UNION SELECT 8,'Interest rate yield shocks absolute changes (basis points)','Asia China Interest rate swap on the CNY (Chinese yuan)','6M',135
---UNION SELECT 8,'Interest rate yield shocks absolute changes (basis points)','Asia China Interest rate swap on the CNY (Chinese yuan)','1Y',154
---UNION SELECT 8,'Interest rate yield shocks absolute changes (basis points)','Asia China Interest rate swap on the CNY (Chinese yuan)','2Y',177
---UNION SELECT 8,'Interest rate yield shocks absolute changes (basis points)','Asia Hong Kong Interest rate swap on the HKD (Hong Kong dollar)','1M',108
---UNION SELECT 8,'Interest rate yield shocks absolute changes (basis points)','Asia Hong Kong Interest rate swap on the HKD (Hong Kong dollar)','3M',125
---UNION SELECT 8,'Interest rate yield shocks absolute changes (basis points)','Asia Hong Kong Interest rate swap on the HKD (Hong Kong dollar)','6M',144
---UNION SELECT 8,'Interest rate yield shocks absolute changes (basis points)','Asia Hong Kong Interest rate swap on the HKD (Hong Kong dollar)','1Y',157
---UNION SELECT 8,'Interest rate yield shocks absolute changes (basis points)','Asia Hong Kong Interest rate swap on the HKD (Hong Kong dollar)','2Y',179
---UNION SELECT 8,'Interest rate yield shocks absolute changes (basis points)','Asia Japan Interest rate swap on the JPY (Japanese yen)','1M',8
---UNION SELECT 8,'Interest rate yield shocks absolute changes (basis points)','Asia Japan Interest rate swap on the JPY (Japanese yen)','3M',9
---UNION SELECT 8,'Interest rate yield shocks absolute changes (basis points)','Asia Japan Interest rate swap on the JPY (Japanese yen)','6M',14
---UNION SELECT 8,'Interest rate yield shocks absolute changes (basis points)','Asia Japan Interest rate swap on the JPY (Japanese yen)','1Y',19
---UNION SELECT 8,'Interest rate yield shocks absolute changes (basis points)','Asia Japan Interest rate swap on the JPY (Japanese yen)','2Y',29
---UNION SELECT 8,'Interest rate yield shocks absolute changes (basis points)','Asia Malaysia Interest rate swap on the MYR (Malaysian ringgit)','1M',34
---UNION SELECT 8,'Interest rate yield shocks absolute changes (basis points)','Asia Malaysia Interest rate swap on the MYR (Malaysian ringgit)','3M',51
---UNION SELECT 8,'Interest rate yield shocks absolute changes (basis points)','Asia Malaysia Interest rate swap on the MYR (Malaysian ringgit)','6M',83
---UNION SELECT 8,'Interest rate yield shocks absolute changes (basis points)','Asia Malaysia Interest rate swap on the MYR (Malaysian ringgit)','1Y',104
---UNION SELECT 8,'Interest rate yield shocks absolute changes (basis points)','Asia Malaysia Interest rate swap on the MYR (Malaysian ringgit)','2Y',107
---UNION SELECT 8,'Interest rate yield shocks absolute changes (basis points)','Asia Singapore Interest rate swap on the SGD (Singapore dollar)','1M',119
---UNION SELECT 8,'Interest rate yield shocks absolute changes (basis points)','Asia Singapore Interest rate swap on the SGD (Singapore dollar)','3M',130
---UNION SELECT 8,'Interest rate yield shocks absolute changes (basis points)','Asia Singapore Interest rate swap on the SGD (Singapore dollar)','6M',138
---UNION SELECT 8,'Interest rate yield shocks absolute changes (basis points)','Asia Singapore Interest rate swap on the SGD (Singapore dollar)','1Y',148
---UNION SELECT 8,'Interest rate yield shocks absolute changes (basis points)','Asia Singapore Interest rate swap on the SGD (Singapore dollar)','2Y',148
---UNION SELECT 8,'Interest rate yield shocks absolute changes (basis points)','Africa South Africa Interest rate swap on the ZAR (South African rand)','1M',162
---UNION SELECT 8,'Interest rate yield shocks absolute changes (basis points)','Africa South Africa Interest rate swap on the ZAR (South African rand)','3M',166
---UNION SELECT 8,'Interest rate yield shocks absolute changes (basis points)','Africa South Africa Interest rate swap on the ZAR (South African rand)','6M',169
---UNION SELECT 8,'Interest rate yield shocks absolute changes (basis points)','Africa South Africa Interest rate swap on the ZAR (South African rand)','1Y',188
---UNION SELECT 8,'Interest rate yield shocks absolute changes (basis points)','Africa South Africa Interest rate swap on the ZAR (South African rand)','2Y',210
+--UNION SELECT 8,'Interest rate yield shocks absolute changes (basis points)','Euro area','1M',90
+--UNION SELECT 8,'Interest rate yield shocks absolute changes (basis points)','Euro area','3M',90
+--UNION SELECT 8,'Interest rate yield shocks absolute changes (basis points)','Euro area','6M',120
+--UNION SELECT 8,'Interest rate yield shocks absolute changes (basis points)','Euro area','1Y',130
+--UNION SELECT 8,'Interest rate yield shocks absolute changes (basis points)','Euro area','2Y',140
+--UNION SELECT 8,'Interest rate yield shocks absolute changes (basis points)','Bulgaria','1M',120
+--UNION SELECT 8,'Interest rate yield shocks absolute changes (basis points)','Bulgaria','3M',140
+--UNION SELECT 8,'Interest rate yield shocks absolute changes (basis points)','Bulgaria','6M',160
+--UNION SELECT 8,'Interest rate yield shocks absolute changes (basis points)','Bulgaria','1Y',170
+--UNION SELECT 8,'Interest rate yield shocks absolute changes (basis points)','Bulgaria','2Y',180
+--UNION SELECT 8,'Interest rate yield shocks absolute changes (basis points)','Czech Republic','1M',100
+--UNION SELECT 8,'Interest rate yield shocks absolute changes (basis points)','Czech Republic','3M',110
+--UNION SELECT 8,'Interest rate yield shocks absolute changes (basis points)','Czech Republic','6M',120
+--UNION SELECT 8,'Interest rate yield shocks absolute changes (basis points)','Czech Republic','1Y',150
+--UNION SELECT 8,'Interest rate yield shocks absolute changes (basis points)','Czech Republic','2Y',180
+--UNION SELECT 8,'Interest rate yield shocks absolute changes (basis points)','Denmark','1M',90
+--UNION SELECT 8,'Interest rate yield shocks absolute changes (basis points)','Denmark','3M',100
+--UNION SELECT 8,'Interest rate yield shocks absolute changes (basis points)','Denmark','6M',120
+--UNION SELECT 8,'Interest rate yield shocks absolute changes (basis points)','Denmark','1Y',130
+--UNION SELECT 8,'Interest rate yield shocks absolute changes (basis points)','Denmark','2Y',140
+--UNION SELECT 8,'Interest rate yield shocks absolute changes (basis points)','Hungary','1M',110
+--UNION SELECT 8,'Interest rate yield shocks absolute changes (basis points)','Hungary','3M',120
+--UNION SELECT 8,'Interest rate yield shocks absolute changes (basis points)','Hungary','6M',140
+--UNION SELECT 8,'Interest rate yield shocks absolute changes (basis points)','Hungary','1Y',160
+--UNION SELECT 8,'Interest rate yield shocks absolute changes (basis points)','Hungary','2Y',180
+--UNION SELECT 8,'Interest rate yield shocks absolute changes (basis points)','Poland','1M',110
+--UNION SELECT 8,'Interest rate yield shocks absolute changes (basis points)','Poland','3M',110
+--UNION SELECT 8,'Interest rate yield shocks absolute changes (basis points)','Poland','6M',140
+--UNION SELECT 8,'Interest rate yield shocks absolute changes (basis points)','Poland','1Y',160
+--UNION SELECT 8,'Interest rate yield shocks absolute changes (basis points)','Poland','2Y',180
+--UNION SELECT 8,'Interest rate yield shocks absolute changes (basis points)','Romania','1M',120
+--UNION SELECT 8,'Interest rate yield shocks absolute changes (basis points)','Romania','3M',140
+--UNION SELECT 8,'Interest rate yield shocks absolute changes (basis points)','Romania','6M',160
+--UNION SELECT 8,'Interest rate yield shocks absolute changes (basis points)','Romania','1Y',170
+--UNION SELECT 8,'Interest rate yield shocks absolute changes (basis points)','Romania','2Y',180
+--UNION SELECT 8,'Interest rate yield shocks absolute changes (basis points)','Sweden','1M',90
+--UNION SELECT 8,'Interest rate yield shocks absolute changes (basis points)','Sweden','3M',90
+--UNION SELECT 8,'Interest rate yield shocks absolute changes (basis points)','Sweden','6M',120
+--UNION SELECT 8,'Interest rate yield shocks absolute changes (basis points)','Sweden','1Y',130
+--UNION SELECT 8,'Interest rate yield shocks absolute changes (basis points)','Sweden','2Y',140
+--UNION SELECT 8,'Interest rate yield shocks absolute changes (basis points)','United Kingdom','1M',100
+--UNION SELECT 8,'Interest rate yield shocks absolute changes (basis points)','United Kingdom','3M',100
+--UNION SELECT 8,'Interest rate yield shocks absolute changes (basis points)','United Kingdom','6M',120
+--UNION SELECT 8,'Interest rate yield shocks absolute changes (basis points)','United Kingdom','1Y',130
+--UNION SELECT 8,'Interest rate yield shocks absolute changes (basis points)','United Kingdom','2Y',140
+--UNION SELECT 8,'Interest rate yield shocks absolute changes (basis points)','Norway','1M',100
+--UNION SELECT 8,'Interest rate yield shocks absolute changes (basis points)','Norway','3M',100
+--UNION SELECT 8,'Interest rate yield shocks absolute changes (basis points)','Norway','6M',120
+--UNION SELECT 8,'Interest rate yield shocks absolute changes (basis points)','Norway','1Y',130
+--UNION SELECT 8,'Interest rate yield shocks absolute changes (basis points)','Norway','2Y',140
+--UNION SELECT 8,'Interest rate yield shocks absolute changes (basis points)','Russia','1M',210
+--UNION SELECT 8,'Interest rate yield shocks absolute changes (basis points)','Russia','3M',210
+--UNION SELECT 8,'Interest rate yield shocks absolute changes (basis points)','Russia','6M',220
+--UNION SELECT 8,'Interest rate yield shocks absolute changes (basis points)','Russia','1Y',220
+--UNION SELECT 8,'Interest rate yield shocks absolute changes (basis points)','Russia','2Y',260
+--UNION SELECT 8,'Interest rate yield shocks absolute changes (basis points)','Switzerland','1M',80
+--UNION SELECT 8,'Interest rate yield shocks absolute changes (basis points)','Switzerland','3M',90
+--UNION SELECT 8,'Interest rate yield shocks absolute changes (basis points)','Switzerland','6M',110
+--UNION SELECT 8,'Interest rate yield shocks absolute changes (basis points)','Switzerland','1Y',130
+--UNION SELECT 8,'Interest rate yield shocks absolute changes (basis points)','Switzerland','2Y',140
+--UNION SELECT 8,'Interest rate yield shocks absolute changes (basis points)','Turkey','1M',230
+--UNION SELECT 8,'Interest rate yield shocks absolute changes (basis points)','Turkey','3M',270
+--UNION SELECT 8,'Interest rate yield shocks absolute changes (basis points)','Turkey','6M',310
+--UNION SELECT 8,'Interest rate yield shocks absolute changes (basis points)','Turkey','1Y',340
+--UNION SELECT 8,'Interest rate yield shocks absolute changes (basis points)','Turkey','2Y',380
+--UNION SELECT 8,'Interest rate yield shocks absolute changes (basis points)','Canada','1M',100
+--UNION SELECT 8,'Interest rate yield shocks absolute changes (basis points)','Canada','3M',110
+--UNION SELECT 8,'Interest rate yield shocks absolute changes (basis points)','Canada','6M',130
+--UNION SELECT 8,'Interest rate yield shocks absolute changes (basis points)','Canada','1Y',140
+--UNION SELECT 8,'Interest rate yield shocks absolute changes (basis points)','Canada','2Y',150
+--UNION SELECT 8,'Interest rate yield shocks absolute changes (basis points)','United States','1M',100
+--UNION SELECT 8,'Interest rate yield shocks absolute changes (basis points)','United States','3M',110
+--UNION SELECT 8,'Interest rate yield shocks absolute changes (basis points)','United States','6M',130
+--UNION SELECT 8,'Interest rate yield shocks absolute changes (basis points)','United States','1Y',140
+--UNION SELECT 8,'Interest rate yield shocks absolute changes (basis points)','United States','2Y',150
+--UNION SELECT 8,'Interest rate yield shocks absolute changes (basis points)','Australia','1M',100
+--UNION SELECT 8,'Interest rate yield shocks absolute changes (basis points)','Australia','3M',130
+--UNION SELECT 8,'Interest rate yield shocks absolute changes (basis points)','Australia','6M',130
+--UNION SELECT 8,'Interest rate yield shocks absolute changes (basis points)','Australia','1Y',150
+--UNION SELECT 8,'Interest rate yield shocks absolute changes (basis points)','Australia','2Y',160
+--UNION SELECT 8,'Interest rate yield shocks absolute changes (basis points)','New Zealand','1M',100
+--UNION SELECT 8,'Interest rate yield shocks absolute changes (basis points)','New Zealand','3M',130
+--UNION SELECT 8,'Interest rate yield shocks absolute changes (basis points)','New Zealand','6M',140
+--UNION SELECT 8,'Interest rate yield shocks absolute changes (basis points)','New Zealand','1Y',150
+--UNION SELECT 8,'Interest rate yield shocks absolute changes (basis points)','New Zealand','2Y',160
+--UNION SELECT 8,'Interest rate yield shocks absolute changes (basis points)','Chile','1M',170
+--UNION SELECT 8,'Interest rate yield shocks absolute changes (basis points)','Chile','3M',190
+--UNION SELECT 8,'Interest rate yield shocks absolute changes (basis points)','Chile','6M',220
+--UNION SELECT 8,'Interest rate yield shocks absolute changes (basis points)','Chile','1Y',240
+--UNION SELECT 8,'Interest rate yield shocks absolute changes (basis points)','Chile','2Y',280
+--UNION SELECT 8,'Interest rate yield shocks absolute changes (basis points)','Colombia','1M',230
+--UNION SELECT 8,'Interest rate yield shocks absolute changes (basis points)','Colombia','3M',250
+--UNION SELECT 8,'Interest rate yield shocks absolute changes (basis points)','Colombia','6M',250
+--UNION SELECT 8,'Interest rate yield shocks absolute changes (basis points)','Colombia','1Y',260
+--UNION SELECT 8,'Interest rate yield shocks absolute changes (basis points)','Colombia','2Y',270
+--UNION SELECT 8,'Interest rate yield shocks absolute changes (basis points)','Mexico','1M',160
+--UNION SELECT 8,'Interest rate yield shocks absolute changes (basis points)','Mexico','3M',180
+--UNION SELECT 8,'Interest rate yield shocks absolute changes (basis points)','Mexico','6M',200
+--UNION SELECT 8,'Interest rate yield shocks absolute changes (basis points)','Mexico','1Y',220
+--UNION SELECT 8,'Interest rate yield shocks absolute changes (basis points)','Mexico','2Y',250
+--UNION SELECT 8,'Interest rate yield shocks absolute changes (basis points)','China','1M',100
+--UNION SELECT 8,'Interest rate yield shocks absolute changes (basis points)','China','3M',120
+--UNION SELECT 8,'Interest rate yield shocks absolute changes (basis points)','China','6M',140
+--UNION SELECT 8,'Interest rate yield shocks absolute changes (basis points)','China','1Y',170
+--UNION SELECT 8,'Interest rate yield shocks absolute changes (basis points)','China','2Y',190
+--UNION SELECT 8,'Interest rate yield shocks absolute changes (basis points)','Hong Kong','1M',110
+--UNION SELECT 8,'Interest rate yield shocks absolute changes (basis points)','Hong Kong','3M',130
+--UNION SELECT 8,'Interest rate yield shocks absolute changes (basis points)','Hong Kong','6M',150
+--UNION SELECT 8,'Interest rate yield shocks absolute changes (basis points)','Hong Kong','1Y',170
+--UNION SELECT 8,'Interest rate yield shocks absolute changes (basis points)','Hong Kong','2Y',190
+--UNION SELECT 8,'Interest rate yield shocks absolute changes (basis points)','India','1M',120
+--UNION SELECT 8,'Interest rate yield shocks absolute changes (basis points)','India','3M',140
+--UNION SELECT 8,'Interest rate yield shocks absolute changes (basis points)','India','6M',160
+--UNION SELECT 8,'Interest rate yield shocks absolute changes (basis points)','India','1Y',180
+--UNION SELECT 8,'Interest rate yield shocks absolute changes (basis points)','India','2Y',200
+--UNION SELECT 8,'Interest rate yield shocks absolute changes (basis points)','Japan','1M',10
+--UNION SELECT 8,'Interest rate yield shocks absolute changes (basis points)','Japan','3M',10
+--UNION SELECT 8,'Interest rate yield shocks absolute changes (basis points)','Japan','6M',10
+--UNION SELECT 8,'Interest rate yield shocks absolute changes (basis points)','Japan','1Y',20
+--UNION SELECT 8,'Interest rate yield shocks absolute changes (basis points)','Japan','2Y',30
+--UNION SELECT 8,'Interest rate yield shocks absolute changes (basis points)','Korea','1M',100
+--UNION SELECT 8,'Interest rate yield shocks absolute changes (basis points)','Korea','3M',120
+--UNION SELECT 8,'Interest rate yield shocks absolute changes (basis points)','Korea','6M',130
+--UNION SELECT 8,'Interest rate yield shocks absolute changes (basis points)','Korea','1Y',170
+--UNION SELECT 8,'Interest rate yield shocks absolute changes (basis points)','Korea','2Y',200
+--UNION SELECT 8,'Interest rate yield shocks absolute changes (basis points)','Malaysia','1M',40
+--UNION SELECT 8,'Interest rate yield shocks absolute changes (basis points)','Malaysia','3M',60
+--UNION SELECT 8,'Interest rate yield shocks absolute changes (basis points)','Malaysia','6M',80
+--UNION SELECT 8,'Interest rate yield shocks absolute changes (basis points)','Malaysia','1Y',110
+--UNION SELECT 8,'Interest rate yield shocks absolute changes (basis points)','Malaysia','2Y',120
+--UNION SELECT 8,'Interest rate yield shocks absolute changes (basis points)','Singapore','1M',120
+--UNION SELECT 8,'Interest rate yield shocks absolute changes (basis points)','Singapore','3M',130
+--UNION SELECT 8,'Interest rate yield shocks absolute changes (basis points)','Singapore','6M',140
+--UNION SELECT 8,'Interest rate yield shocks absolute changes (basis points)','Singapore','1Y',150
+--UNION SELECT 8,'Interest rate yield shocks absolute changes (basis points)','Singapore','2Y',160
+--UNION SELECT 8,'Interest rate yield shocks absolute changes (basis points)','Thailand','1M',50
+--UNION SELECT 8,'Interest rate yield shocks absolute changes (basis points)','Thailand','3M',70
+--UNION SELECT 8,'Interest rate yield shocks absolute changes (basis points)','Thailand','6M',90
+--UNION SELECT 8,'Interest rate yield shocks absolute changes (basis points)','Thailand','1Y',120
+--UNION SELECT 8,'Interest rate yield shocks absolute changes (basis points)','Thailand','2Y',130
+--UNION SELECT 8,'Interest rate yield shocks absolute changes (basis points)','South Africa','1M',150
+--UNION SELECT 8,'Interest rate yield shocks absolute changes (basis points)','South Africa','3M',160
+--UNION SELECT 8,'Interest rate yield shocks absolute changes (basis points)','South Africa','6M',160
+--UNION SELECT 8,'Interest rate yield shocks absolute changes (basis points)','South Africa','1Y',190
+--UNION SELECT 8,'Interest rate yield shocks absolute changes (basis points)','South Africa','2Y',220
 
 ----TABLE 9-------------------------------------------------------------------------------------------------------------------
 
---UNION SELECT 9,'Interest rate yield shocks absolute changes (basis points)','EU','1M',109
---UNION SELECT 9,'Interest rate yield shocks absolute changes (basis points)','EU','3M',121
---UNION SELECT 9,'Interest rate yield shocks absolute changes (basis points)','EU','6M',135
---UNION SELECT 9,'Interest rate yield shocks absolute changes (basis points)','EU','1Y',144
---UNION SELECT 9,'Interest rate yield shocks absolute changes (basis points)','EU','2Y',154
---UNION SELECT 9,'Interest rate yield shocks absolute changes (basis points)','Other advanced economies','1M',85
---UNION SELECT 9,'Interest rate yield shocks absolute changes (basis points)','Other advanced economies','3M',99
---UNION SELECT 9,'Interest rate yield shocks absolute changes (basis points)','Other advanced economies','6M',115
---UNION SELECT 9,'Interest rate yield shocks absolute changes (basis points)','Other advanced economies','1Y',128
---UNION SELECT 9,'Interest rate yield shocks absolute changes (basis points)','Other advanced economies','2Y',141
---UNION SELECT 9,'Interest rate yield shocks absolute changes (basis points)','Other emerging markets','1M',140
---UNION SELECT 9,'Interest rate yield shocks absolute changes (basis points)','Other emerging markets','3M',155
---UNION SELECT 9,'Interest rate yield shocks absolute changes (basis points)','Other emerging markets','6M',174
---UNION SELECT 9,'Interest rate yield shocks absolute changes (basis points)','Other emerging markets','1Y',196
---UNION SELECT 9,'Interest rate yield shocks absolute changes (basis points)','Other emerging markets','2Y',210
+--UNION SELECT 8,'Interest rate yield shocks absolute changes (basis points)','EU','1M',109
+--UNION SELECT 8,'Interest rate yield shocks absolute changes (basis points)','EU','3M',121
+--UNION SELECT 8,'Interest rate yield shocks absolute changes (basis points)','EU','6M',135
+--UNION SELECT 8,'Interest rate yield shocks absolute changes (basis points)','EU','1Y',144
+--UNION SELECT 8,'Interest rate yield shocks absolute changes (basis points)','EU','2Y',154
+--UNION SELECT 8,'Interest rate yield shocks absolute changes (basis points)','Other advanced economies','1M',85
+--UNION SELECT 8,'Interest rate yield shocks absolute changes (basis points)','Other advanced economies','3M',99
+--UNION SELECT 8,'Interest rate yield shocks absolute changes (basis points)','Other advanced economies','6M',115
+--UNION SELECT 8,'Interest rate yield shocks absolute changes (basis points)','Other advanced economies','1Y',128
+--UNION SELECT 8,'Interest rate yield shocks absolute changes (basis points)','Other advanced economies','2Y',141
+--UNION SELECT 8,'Interest rate yield shocks absolute changes (basis points)','Other emerging markets','1M',140
+--UNION SELECT 8,'Interest rate yield shocks absolute changes (basis points)','Other emerging markets','3M',155
+--UNION SELECT 8,'Interest rate yield shocks absolute changes (basis points)','Other emerging markets','6M',174
+--UNION SELECT 8,'Interest rate yield shocks absolute changes (basis points)','Other emerging markets','1Y',196
+--UNION SELECT 8,'Interest rate yield shocks absolute changes (basis points)','Other emerging markets','2Y',210
 
 ----TABLE 10-------------------------------------------------------------------------------------------------------------------
 
---UNION SELECT 10,'FX shocks (appreciation of the EUR against the USD) relative changes (%)','EURCZK','Shock',4.80
---UNION SELECT 10,'FX shocks (appreciation of the EUR against the USD) relative changes (%)','EURHUF','Shock',10.90
---UNION SELECT 10,'FX shocks (appreciation of the EUR against the USD) relative changes (%)','EURPLN','Shock',7.52
---UNION SELECT 10,'FX shocks (appreciation of the EUR against the USD) relative changes (%)','EURRON','Shock',2.87
---UNION SELECT 10,'FX shocks (appreciation of the EUR against the USD) relative changes (%)','EURSEK','Shock',9.33
---UNION SELECT 10,'FX shocks (appreciation of the EUR against the USD) relative changes (%)','EURRSD','Shock',2.10
---UNION SELECT 10,'FX shocks (appreciation of the EUR against the USD) relative changes (%)','EURNOK','Shock',12.85
---UNION SELECT 10,'FX shocks (appreciation of the EUR against the USD) relative changes (%)','EURGBP','Shock',8.79
---UNION SELECT 10,'FX shocks (appreciation of the EUR against the USD) relative changes (%)','EURCHF','Shock',5.72
---UNION SELECT 10,'FX shocks (appreciation of the EUR against the USD) relative changes (%)','EURTRY','Shock',16.95
---UNION SELECT 10,'FX shocks (appreciation of the EUR against the USD) relative changes (%)','USDCAD','Shock',-5.92
---UNION SELECT 10,'FX shocks (appreciation of the EUR against the USD) relative changes (%)','EURUSD','Shock',7.86
---UNION SELECT 10,'FX shocks (appreciation of the EUR against the USD) relative changes (%)','AUDUSD','Shock',10.59
---UNION SELECT 10,'FX shocks (appreciation of the EUR against the USD) relative changes (%)','NZDUSD','Shock',10.44
---UNION SELECT 10,'FX shocks (appreciation of the EUR against the USD) relative changes (%)','USDARS','Shock',9.24
---UNION SELECT 10,'FX shocks (appreciation of the EUR against the USD) relative changes (%)','USDBRL','Shock',-17.62
---UNION SELECT 10,'FX shocks (appreciation of the EUR against the USD) relative changes (%)','USDMXN','Shock',-12.46
---UNION SELECT 10,'FX shocks (appreciation of the EUR against the USD) relative changes (%)','USDCNY','Shock',-3.38
---UNION SELECT 10,'FX shocks (appreciation of the EUR against the USD) relative changes (%)','USDHKD','Shock',-0.65
---UNION SELECT 10,'FX shocks (appreciation of the EUR against the USD) relative changes (%)','USDINR','Shock',-2.99
---UNION SELECT 10,'FX shocks (appreciation of the EUR against the USD) relative changes (%)','USDJPY','Shock',-8.47
---UNION SELECT 10,'FX shocks (appreciation of the EUR against the USD) relative changes (%)','USDKRW','Shock',-8.11
---UNION SELECT 10,'FX shocks (appreciation of the EUR against the USD) relative changes (%)','USDMYR','Shock',-3.64
---UNION SELECT 10,'FX shocks (appreciation of the EUR against the USD) relative changes (%)','USDSGD','Shock',-4.97
---UNION SELECT 10,'FX shocks (appreciation of the EUR against the USD) relative changes (%)','USDTHB','Shock',-7.21
---UNION SELECT 10,'FX shocks (appreciation of the EUR against the USD) relative changes (%)','USDZAR','Shock',-12.16
+--UNION SELECT 9,'FX shocks (appreciation of the EUR against the USD) relative changes (%)','EURCZK','Shock',4.80
+--UNION SELECT 9,'FX shocks (appreciation of the EUR against the USD) relative changes (%)','EURHUF','Shock',10.90
+--UNION SELECT 9,'FX shocks (appreciation of the EUR against the USD) relative changes (%)','EURPLN','Shock',7.52
+--UNION SELECT 9,'FX shocks (appreciation of the EUR against the USD) relative changes (%)','EURRON','Shock',2.87
+--UNION SELECT 9,'FX shocks (appreciation of the EUR against the USD) relative changes (%)','EURSEK','Shock',9.33
+--UNION SELECT 9,'FX shocks (appreciation of the EUR against the USD) relative changes (%)','EURRSD','Shock',2.10
+--UNION SELECT 9,'FX shocks (appreciation of the EUR against the USD) relative changes (%)','EURNOK','Shock',12.85
+--UNION SELECT 9,'FX shocks (appreciation of the EUR against the USD) relative changes (%)','EURGBP','Shock',8.79
+--UNION SELECT 9,'FX shocks (appreciation of the EUR against the USD) relative changes (%)','EURCHF','Shock',5.72
+--UNION SELECT 9,'FX shocks (appreciation of the EUR against the USD) relative changes (%)','EURTRY','Shock',16.95
+--UNION SELECT 9,'FX shocks (appreciation of the EUR against the USD) relative changes (%)','USDCAD','Shock',-5.92
+--UNION SELECT 9,'FX shocks (appreciation of the EUR against the USD) relative changes (%)','EURUSD','Shock',7.86
+--UNION SELECT 9,'FX shocks (appreciation of the EUR against the USD) relative changes (%)','AUDUSD','Shock',10.59
+--UNION SELECT 9,'FX shocks (appreciation of the EUR against the USD) relative changes (%)','NZDUSD','Shock',10.44
+--UNION SELECT 9,'FX shocks (appreciation of the EUR against the USD) relative changes (%)','USDARS','Shock',9.24
+--UNION SELECT 9,'FX shocks (appreciation of the EUR against the USD) relative changes (%)','USDBRL','Shock',-17.62
+--UNION SELECT 9,'FX shocks (appreciation of the EUR against the USD) relative changes (%)','USDMXN','Shock',-12.46
+--UNION SELECT 9,'FX shocks (appreciation of the EUR against the USD) relative changes (%)','USDCNY','Shock',-3.38
+--UNION SELECT 9,'FX shocks (appreciation of the EUR against the USD) relative changes (%)','USDHKD','Shock',-0.65
+--UNION SELECT 9,'FX shocks (appreciation of the EUR against the USD) relative changes (%)','USDINR','Shock',-2.99
+--UNION SELECT 9,'FX shocks (appreciation of the EUR against the USD) relative changes (%)','USDJPY','Shock',-8.47
+--UNION SELECT 9,'FX shocks (appreciation of the EUR against the USD) relative changes (%)','USDKRW','Shock',-8.11
+--UNION SELECT 9,'FX shocks (appreciation of the EUR against the USD) relative changes (%)','USDMYR','Shock',-3.64
+--UNION SELECT 9,'FX shocks (appreciation of the EUR against the USD) relative changes (%)','USDSGD','Shock',-4.97
+--UNION SELECT 9,'FX shocks (appreciation of the EUR against the USD) relative changes (%)','USDTHB','Shock',-7.21
+--UNION SELECT 9,'FX shocks (appreciation of the EUR against the USD) relative changes (%)','USDZAR','Shock',-12.16
 
 ----TABLE 11-------------------------------------------------------------------------------------------------------------------
 
---UNION SELECT 11,'FX shocks (depreciation of the EUR against the USD) relative changes (%)','EURCZK','Shock',-6.44
---UNION SELECT 11,'FX shocks (depreciation of the EUR against the USD) relative changes (%)','EURHUF','Shock',-13.46
---UNION SELECT 11,'FX shocks (depreciation of the EUR against the USD) relative changes (%)','EURPLN','Shock',-8.38
---UNION SELECT 11,'FX shocks (depreciation of the EUR against the USD) relative changes (%)','EURRON','Shock',-2.70
---UNION SELECT 11,'FX shocks (depreciation of the EUR against the USD) relative changes (%)','EURSEK','Shock',-5.47
---UNION SELECT 11,'FX shocks (depreciation of the EUR against the USD) relative changes (%)','EURRSD','Shock',-1.95
---UNION SELECT 11,'FX shocks (depreciation of the EUR against the USD) relative changes (%)','EURNOK','Shock',-6.77
---UNION SELECT 11,'FX shocks (depreciation of the EUR against the USD) relative changes (%)','EURGBP','Shock',-5.92
---UNION SELECT 11,'FX shocks (depreciation of the EUR against the USD) relative changes (%)','EURCHF','Shock',-8.21
---UNION SELECT 11,'FX shocks (depreciation of the EUR against the USD) relative changes (%)','EURTRY','Shock',-7.74
---UNION SELECT 11,'FX shocks (depreciation of the EUR against the USD) relative changes (%)','USDCAD','Shock',10.11
---UNION SELECT 11,'FX shocks (depreciation of the EUR against the USD) relative changes (%)','EURUSD','Shock',-11.34
---UNION SELECT 11,'FX shocks (depreciation of the EUR against the USD) relative changes (%)','AUDUSD','Shock',-15.68
---UNION SELECT 11,'FX shocks (depreciation of the EUR against the USD) relative changes (%)','NZDUSD','Shock',-14.33
---UNION SELECT 11,'FX shocks (depreciation of the EUR against the USD) relative changes (%)','USDARS','Shock',17.90
---UNION SELECT 11,'FX shocks (depreciation of the EUR against the USD) relative changes (%)','USDBRL','Shock',16.00
---UNION SELECT 11,'FX shocks (depreciation of the EUR against the USD) relative changes (%)','USDMXN','Shock',9.14
---UNION SELECT 11,'FX shocks (depreciation of the EUR against the USD) relative changes (%)','USDCNY','Shock',7.38
---UNION SELECT 11,'FX shocks (depreciation of the EUR against the USD) relative changes (%)','USDHKD','Shock',0.80
---UNION SELECT 11,'FX shocks (depreciation of the EUR against the USD) relative changes (%)','USDINR','Shock',6.85
---UNION SELECT 11,'FX shocks (depreciation of the EUR against the USD) relative changes (%)','USDJPY','Shock',14.25
---UNION SELECT 11,'FX shocks (depreciation of the EUR against the USD) relative changes (%)','USDKRW','Shock',12.95
---UNION SELECT 11,'FX shocks (depreciation of the EUR against the USD) relative changes (%)','USDMYR','Shock',6.53
---UNION SELECT 11,'FX shocks (depreciation of the EUR against the USD) relative changes (%)','USDSGD','Shock',5.55
---UNION SELECT 11,'FX shocks (depreciation of the EUR against the USD) relative changes (%)','USDTHB','Shock',8.90
---UNION SELECT 11,'FX shocks (depreciation of the EUR against the USD) relative changes (%)','USDZAR','Shock',18.84
+--UNION SELECT 10,'FX shocks (depreciation of the EUR against the USD) relative changes (%)','EURCZK','Shock',-6.44
+--UNION SELECT 10,'FX shocks (depreciation of the EUR against the USD) relative changes (%)','EURHUF','Shock',-13.46
+--UNION SELECT 10,'FX shocks (depreciation of the EUR against the USD) relative changes (%)','EURPLN','Shock',-8.38
+--UNION SELECT 10,'FX shocks (depreciation of the EUR against the USD) relative changes (%)','EURRON','Shock',-2.70
+--UNION SELECT 10,'FX shocks (depreciation of the EUR against the USD) relative changes (%)','EURSEK','Shock',-5.47
+--UNION SELECT 10,'FX shocks (depreciation of the EUR against the USD) relative changes (%)','EURRSD','Shock',-1.95
+--UNION SELECT 10,'FX shocks (depreciation of the EUR against the USD) relative changes (%)','EURNOK','Shock',-6.77
+--UNION SELECT 10,'FX shocks (depreciation of the EUR against the USD) relative changes (%)','EURGBP','Shock',-5.92
+--UNION SELECT 10,'FX shocks (depreciation of the EUR against the USD) relative changes (%)','EURCHF','Shock',-8.21
+--UNION SELECT 10,'FX shocks (depreciation of the EUR against the USD) relative changes (%)','EURTRY','Shock',-7.74
+--UNION SELECT 10,'FX shocks (depreciation of the EUR against the USD) relative changes (%)','USDCAD','Shock',10.11
+--UNION SELECT 10,'FX shocks (depreciation of the EUR against the USD) relative changes (%)','EURUSD','Shock',-11.34
+--UNION SELECT 10,'FX shocks (depreciation of the EUR against the USD) relative changes (%)','AUDUSD','Shock',-15.68
+--UNION SELECT 10,'FX shocks (depreciation of the EUR against the USD) relative changes (%)','NZDUSD','Shock',-14.33
+--UNION SELECT 10,'FX shocks (depreciation of the EUR against the USD) relative changes (%)','USDARS','Shock',17.90
+--UNION SELECT 10,'FX shocks (depreciation of the EUR against the USD) relative changes (%)','USDBRL','Shock',16.00
+--UNION SELECT 10,'FX shocks (depreciation of the EUR against the USD) relative changes (%)','USDMXN','Shock',9.14
+--UNION SELECT 10,'FX shocks (depreciation of the EUR against the USD) relative changes (%)','USDCNY','Shock',7.38
+--UNION SELECT 10,'FX shocks (depreciation of the EUR against the USD) relative changes (%)','USDHKD','Shock',0.80
+--UNION SELECT 10,'FX shocks (depreciation of the EUR against the USD) relative changes (%)','USDINR','Shock',6.85
+--UNION SELECT 10,'FX shocks (depreciation of the EUR against the USD) relative changes (%)','USDJPY','Shock',14.25
+--UNION SELECT 10,'FX shocks (depreciation of the EUR against the USD) relative changes (%)','USDKRW','Shock',12.95
+--UNION SELECT 10,'FX shocks (depreciation of the EUR against the USD) relative changes (%)','USDMYR','Shock',6.53
+--UNION SELECT 10,'FX shocks (depreciation of the EUR against the USD) relative changes (%)','USDSGD','Shock',5.55
+--UNION SELECT 10,'FX shocks (depreciation of the EUR against the USD) relative changes (%)','USDTHB','Shock',8.90
+--UNION SELECT 10,'FX shocks (depreciation of the EUR against the USD) relative changes (%)','USDZAR','Shock',18.84
 
 ----TABLE 12-------------------------------------------------------------------------------------------------------------------
 
@@ -473,8 +498,8 @@
 
 ----TABLE 13-------------------------------------------------------------------------------------------------------------------
 
---UNION SELECT 13,'Net outflows (level of redemption)','Professional investor','Net outflows (%)',40
---UNION SELECT 13,'Net outflows (level of redemption)','Retail investor','Net outflows (%)',30
+--UNION SELECT 11,'Net outflows (level of redemption)','Professional investor','Net outflows (%)',40
+--UNION SELECT 11,'Net outflows (level of redemption)','Retail investor','Net outflows (%)',30
 
 ----TABLE 14-------------------------------------------------------------------------------------------------------------------
 

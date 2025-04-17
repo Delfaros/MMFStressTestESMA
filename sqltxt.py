@@ -1,122 +1,193 @@
 import os
 import pandas as pd
 
-def generate_sql_comments_final(csv_dir, output_txt):
-    """
-    Lit les CSV table1.csv jusqu'à table14.csv dans `csv_dir` et génère
-    un fichier .txt formaté selon l'exemple fourni.
-    """
-    # Charger en string pour préserver le format exact des nombres
+def intotxt(csv_dir, output_txt):
+    # Charger les CSV existants
     tables = {}
     for i in range(1, 15):
         path = os.path.join(csv_dir, f"table{i}.csv")
         if os.path.exists(path):
-            tables[i] = pd.read_csv(path, dtype=str)
+            tables[i] = pd.read_csv(path, dtype=str).fillna("")
+
+    # Métadonnées, avec le numéro de SELECT qu'on souhaite
+    tables_meta = {
+    1:  {
+        "select_num": 1,
+        "desc": "Liquidity discount factor - Sovereign bonds by residual maturity - Reference countries (in %)",
+        "key": "Country",
+        "mats": ["3M","6M","1Y","1.5Y","2Y"]
+    },
+    2:  {
+        "select_num": 2,
+        "desc": "Liquidity discount factor - Sovereign bonds by rating and residual maturity (in %)",
+        "key": "Rating",
+        "mats": ["3M","6M","1Y","1.5Y","2Y"]
+    },
+    3:  {
+        "select_num": 3,
+        "desc": "Liquidity discount factor - Corporate bonds by rating and residual maturity (in %)",
+        "key": "Rating",
+        "mats": ["3M","6M","1Y","1.5Y","2Y"]
+    },
+    4:  {
+        "select_num": 4,
+        "desc": "Price impact parameter (in %)",
+        "key": "Label",
+        "val": "Value"
+    },
+    5:  {
+        "select_num": 5,
+        "desc": "Credit Spread by residual maturity - Government bonds (basis points)",
+        "key": "Country",
+        "mats": ["3M","6M","1Y","2Y"]
+    },
+    6:  {
+        "select_num": 6,
+        "desc": "Corporate credit spreads (basis points)",
+        "key": "Rating",
+        "cats": ["Non-financial","Financial covered","Financial","ABS"]
+    },
+    7:  {
+        "select_num": 7,
+        "desc": "Loss given default",
+        "key": "Label",
+        "val": "Value"
+    },
+    8:  {
+        "select_num": 8,
+        "desc": "Interest rate yield shocks absolute changes (basis points)",
+        "key": "Country",
+        "mats": ["1M","3M","6M","1Y","2Y"]
+    },
+    9:  {
+        "select_num": 8,
+        "desc": "Interest rate yield shocks absolute changes (basis points)",
+        "key": "Geographic Area",
+        "mats": ["1M","3M","6M","1Y","2Y"]
+    },
+    10: {
+        "select_num": 9,
+        "desc": "FX shocks (appreciation of the EUR against the USD) relative changes (%)",
+        "key": "ExchangeRateName",
+        "val": "Shock"
+    },
+    11: {
+        "select_num": 10,
+        "desc": "FX shocks (depreciation of the EUR against the USD) relative changes (%)",
+        "key": "ExchangeRateName",
+        "val": "Shock"
+    },
+    12: {
+        "select_num": 12,
+        "desc": "Bucket factor",
+        "key": "BucketInfo",
+        "val": "Pourcentage"
+    },
+    13: {
+        "select_num": 11,
+        "desc": "Net outflows (level of redemption)",
+        "key": "Investor",
+        "val": "NetOutflows(%)"
+    },
+    14: {
+        "select_num": 14,
+        "desc": "Net outflows (macro systematic shocks)",
+        "key": "Label",
+        "val": "Value"
+    },
+}
+
 
     lines = []
-    # Définition des descriptions et colonnes clés
-    tables_meta = {
-        1: {"desc": "Liquidity discount factor - Sovereign bonds by residual maturity - Reference countries (in %)", "key": "Country", "mats": ["3M","6M","1Y","1.5Y","2Y"]},
-        2: {"desc": "Liquidity discount factor - Sovereign bonds by rating and residual maturity (in %)", "key": "Rating", "mats": ["3M","6M","1Y","1.5Y","2Y"]},
-        3: {"desc": "Liquidity discount factor - Corporate bonds by rating and residual maturity (in %)", "key": "Rating", "mats": ["3M","6M","1Y","1.5Y","2Y"]},
-        4: {"desc": "Price impact parameter (in %)", "key": "Label", "val": "Value"},
-        5: {"desc": "Credit Spread by residual maturity - Government bonds (basis points)", "key": "Country", "mats": ["3M","6M","1Y","2Y"]},
-        6: {"desc": "Corporate credit spreads (basis points)", "key": "Rating", "cats": ["Non-financial","Financial covered","Financial","ABS"]},
-        7: {"desc": "Loss given default", "key": "Label", "val": "Value"},
-        8: {"desc": "Interest rate yield shocks absolute changes (basis points)", "key": "GeoCountryDesc", "mats": ["1M","3M","6M","1Y","2Y"]},
-        9: {"desc": "Interest rate yield shocks absolute changes (basis points)", "key": "Geographic Area", "mats": ["1M","3M","6M","1Y","2Y"]},
-        10: {"desc": "FX shocks (appreciation of the EUR against the USD) relative changes (%)", "key": "ExchangeRateName", "val": "Shock"},
-        11: {"desc": "FX shocks (depreciation of the EUR against the USD) relative changes (%)", "key": "ExchangeRateName", "val": "Shock"},
-        12: {"desc": "Bucket factor", "key": "BucketInfo", "val": "Pourcentage"},
-        13: {"desc": "Net outflows (level of redemption)", "key": "Investor", "val": "NetOutflows(%)"},
-        14: {"desc": "Net outflows (macro systematic shocks)", "key": "Label", "val": "Value"},
-    }
+    for i, df in tables.items():
+        meta = tables_meta[i]
+        sel  = meta["select_num"]
 
-    # Generate sections
-    for num in range(1, 15):
-        if num not in tables:
-            continue
-        df = tables[num]
-        meta = tables_meta[num]
-        # Header line with ~115 dashes total
-        dash_count = 115
-        lines.append(f"----TABLE {num}" + "-" * dash_count + "\n\n")
-        desc = meta["desc"]
+        # Section header
+        lines.append(f"----TABLE {i}" + "-"*115 + "\n\n")
 
-        if num in (1,2,3):
-            for _, row in df.iterrows():
-                key = row[meta["key"]]
+        # 1,2,3 : mêmes mats
+        if i in (1,2,3):
+            for _, r in df.iterrows():
+                key = r[meta["key"]]
                 for mat in meta["mats"]:
-                    val = row.get(mat, "")
-                    lines.append(f"--UNION SELECT {num},'{desc}','{key}','{mat}',{val}\n")
-        elif num == 4:
-            for _, row in df.iterrows():
-                label = row["Label"]
-                value = row["Value"]
-                if "E-13" in value:
-                    expr = "POWER(CAST(0.1 AS FLOAT), 13.0)"
-                else:
-                    expr = f"{value} * POWER(CAST(0.1 AS FLOAT), 13.0)"
-                lines.append(f"--UNION SELECT {num},'{desc}','{label}','All',{expr}\n")
-        elif num == 5:
-            for _, row in df.iterrows():
-                country = row["Country"]
-                for mat in meta["mats"]:
-                    val = row.get(mat, "")
-                    lines.append(f"--UNION SELECT {num},'{desc}','{country}','{mat}',{val}\n")
-        elif num == 6:
-            for _, row in df.iterrows():
-                rating = row["Rating"]
+                    val = r.get(mat, "")
+                    lines.append(f"--UNION SELECT {sel},'{meta['desc']}','{key}','{mat}',{val}\n")
+
+        # 4 : pied de page
+        elif i == 4:
+            for _, r in df.iterrows():
+                lab, val = r["Label"], r["Value"]
+                expr = "POWER(CAST(0.1 AS FLOAT), 13.0)" if "E-13" in val \
+                       else f"{val} * POWER(CAST(0.1 AS FLOAT), 13.0)"
+                lines.append(f"--UNION SELECT {sel},'{meta['desc']}','{lab}','All',{expr}\n")
+
+        # 5 : country + mats
+        elif i == 5:
+            for _, r in df.iterrows():
+                c = r["Country"]
+                for m in meta["mats"]:
+                    v = r.get(m, "")
+                    lines.append(f"--UNION SELECT {sel},'{meta['desc']}','{c}','{m}',{v}\n")
+
+        # 6 : rating + cats
+        elif i == 6:
+            for _, r in df.iterrows():
+                rat = r["Rating"]
                 for cat in meta["cats"]:
-                    val = row.get(cat, "")
-                    lines.append(f"--UNION SELECT {num},'{desc}','{rating}','{cat}',{val}\n")
-        elif num == 7:
-            for _, row in df.iterrows():
-                label = row["Label"]
-                val = row["Value"]
-                lines.append(f"--UNION SELECT {num},'{desc}','{label}','Loss given default (%)',{val}\n")
-        elif num in (8,9):
-            for _, row in df.iterrows():
-                area = row[meta["key"]]
-                for mat in meta["mats"]:
-                    val = row.get(mat, "")
-                    lines.append(f"--UNION SELECT {num},'{desc}','{area}','{mat}',{val}\n")
-        elif num in (10,11):
-            for _, row in df.iterrows():
-                exch = row["ExchangeRateName"]
-                shock = row["Shock"]
-                try:
-                    float(shock)
-                except:
-                    continue
-                lines.append(f"--UNION SELECT {num},'{desc}','{exch}','Shock',{shock}\n")
-        elif num == 12:
-            for _, row in df.iterrows():
-                bucket = row["BucketInfo"]
-                pct = row["Pourcentage"]
-                lines.append(f"--UNION SELECT {num},'{desc}','{bucket}','Bucket factor (%)',{pct}\n")
-        elif num == 13:
-            for _, row in df.iterrows():
-                inv = row["Investor"]
-                val = row["NetOutflows(%)"]
-                lines.append(f"--UNION SELECT {num},'{desc}','{inv}','Net outflows (%)',{val}\n")
-        elif num == 14:
-            for _, row in df.iterrows():
-                label = row["Label"]
-                val = row["Value"]
-                lines.append(f"--UNION SELECT {num},'{desc}','{label}','Net outflows (%)',{val}\n")
+                    v = r.get(cat, "")
+                    lines.append(f"--UNION SELECT {sel},'{meta['desc']}','{rat}','{cat}',{v}\n")
+
+        # 7 : label + value fixe
+        elif i == 7:
+            for _, r in df.iterrows():
+                lab, v = r["Label"], r["Value"]
+                lines.append(f"--UNION SELECT {sel},'{meta['desc']}','{lab}','Loss given default (%)',{v}\n")
+
+        # 8 & 9 : zone + mats
+        elif i in (8,9):
+            for _, r in df.iterrows():
+                ct = r[meta["key"]]
+                for m in meta["mats"]:
+                    v = r.get(m, "")
+                    lines.append(f"--UNION SELECT {sel},'{meta['desc']}','{ct}','{m}',{v}\n")
+
+        # 10 & 11 : FX shocks
+        elif i in (10,11):
+            for _, r in df.iterrows():
+                ex, sh = r["ExchangeRateName"], r["Shock"]
+                try: float(sh)
+                except: continue
+                lines.append(f"--UNION SELECT {sel},'{meta['desc']}','{ex}','Shock',{sh}\n")
+
+        # 12 : buckets
+        elif i == 12:
+            for _, r in df.iterrows():
+                b, p = r["BucketInfo"], r["Pourcentage"]
+                lines.append(f"--UNION SELECT {sel},'{meta['desc']}','{b}','Bucket factor (%)',{p}\n")
+
+        # 13 : net outflows
+        elif i == 13:
+            for _, r in df.iterrows():
+                inv, no = r["Investor"], r["NetOutflows(%)"]
+                lines.append(f"--UNION SELECT {sel},'{meta['desc']}','{inv}','Net outflows (%)',{no}\n")
+
+        # 14 : macro shocks
+        elif i == 14:
+            for _, r in df.iterrows():
+                lab, v = r["Label"], r["Value"]
+                lines.append(f"--UNION SELECT {sel},'{meta['desc']}','{lab}','Net outflows (%)',{v}\n")
+
         lines.append("\n")
 
-    # Append dummy UNION SELECT 13
+    # Ligne finale fixe
     lines.append("--UNION SELECT 13,'Choc de marché','Choc de marché','Choc de marché (%)',95\n")
 
-    # Ensure output directory exists
+    # Écriture
     os.makedirs(csv_dir, exist_ok=True)
-    # Write to final txt in csv_dir
     with open(os.path.join(csv_dir, output_txt), "w", encoding="utf-8") as f:
         f.writelines(lines)
 
-# Execute
-generate_sql_comments_final(csv_dir="data/output", output_txt="sql.txt")
-
+# Execute 
+intotxt(csv_dir="data/output", output_txt="sql.txt") 
 print("caca")
